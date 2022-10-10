@@ -1,0 +1,290 @@
+/* ======header====== */
+.main-nav>li:nth-child(1){
+    border-bottom: 5px solid var(--intro-color);
+
+}
+
+/* ====餐廳資訊====== */
+.restaurant-info-section{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container{
+    width: 1200px;
+    text-decoration: none;
+    margin: auto;
+}
+.bread{
+    display: flex;
+    font-family: var(--ct-font);
+    font-weight: 100;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    
+}
+
+.bread a,
+.bread span{
+    text-decoration: none;
+    font-family: var(--ct-font);
+    font-weight: 100;
+    color: var(--text-color);
+    
+}
+
+
+.pics-info{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.pics-info .rest-pics{
+    width: 40%;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.rest-pics .main-img{
+    width: 100%;
+    
+}
+
+.rest-pics .main-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.rest-pics .select-pic{
+    display: flex;
+    width: 100%;
+}
+
+.select-pic .img{
+    width: calc(100%/4);
+    margin: 10px;
+}
+
+.select-pic .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.rest-info{
+    width: 50%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction:column;
+    /* justify-content: space-between; */
+}
+.rest-name{
+    font-family: var(--ct-font);
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 30px;
+
+}
+
+.rest-info .rest-name{
+    font-size: var(--text-color);
+    font-size: var(--h2-fs);
+}
+
+
+.rest-info .title{
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.name-save{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* justify-content: space-between; */
+}
+
+.name-save a{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--intro-color);
+    
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rest-detail{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.rest-detail .title,
+.rest-detail .text{
+    text-decoration: none;
+    font-family: var(--ct-font);
+    font-size: var(--h3-fs);
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.rest-detail .text{
+    font-size: var(--text-fs);
+    color: #666;  
+}
+
+.rest-detail .link:hover{
+    color: var(--intro-color);
+}
+.rest-detail .title{
+    margin-right: 5px;
+}
+
+
+/* =====評分評價===== */
+.score{
+    font-family: var(--ct-font);
+    font-weight: 400;
+    font-size: var(--h3-fs);
+    color: var(--text-color);
+}
+
+/* =======相關文章========= */
+.relative-posts{
+    margin-top: 100px;
+}
+
+.relative-posts h2{
+    font-family:'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    color:rgba(68, 81, 75, 1) ;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.blog-posts{
+    width: 100%;
+    display: flex;
+}
+
+.blog-card{
+    width:calc(80%/3);
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    text-decoration: none;
+
+    /* align-items: center; */
+}
+
+.blog-card .post-date{
+    padding:0 5px 5px;
+    font-family: var(--ct-font);
+    color: var(--intro-color);
+    font-size: 15px;
+
+}
+.blog-card .pic{
+    width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.blog-card .pic img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    border-radius: 20px;
+    vertical-align: middle;
+    object-fit: cover;
+
+    transition: filter .3s;
+}
+
+.blog-card:hover .pic img{
+    filter: brightness(70%);
+}
+
+
+.blog-card .go-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.blog-card .go-icon span{
+    font-size: 50px;
+    color: #fff;
+
+    font-variation-settings:
+    'wght' 200;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.blog-card:hover .go-icon span{
+    opacity: 1;
+    font-variation-settings:
+    'FILL' 1;
+}
+
+.blog-card .post-title{
+    padding: 10px 0;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-family: var(--ct-font);
+    font-weight: 300;
+    color: var(--main-text);
+}
+
+.blog-card .writer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: auto;
+
+
+}
+
+.blog-card .writer-pic{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    
+}
+
+.blog-card .writer-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+.blog-card .writer-name{
+    font-size: 12px;
+    font-family: var(--eg-font);
+    color: var(--intro-color);
+    font-weight: 100;
+}
+
+.main-footer{
+  margin-top: 50px;  
+}

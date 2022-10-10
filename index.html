@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食多寶格Food burger</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- 字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/var.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main_header_footer.css">
+
+    <style>
+
+        
+    </style>
+
+</head>
+<body>
+    <!-- =========main header ===========-->
+    <input type="checkbox" id="menu-switch">
+    <header class="main-header">
+        <!-- logo -->
+        <div class="nav-bar">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="homepage_pic/logo.png" alt="">
+                </a>
+            </h1>
+            <!-- hamber -->
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- 選單 -->
+            <ul class="main-nav">
+                <li class="nav-search">
+                    <a class="tit">搜尋美食</a>
+                    <ul>
+                        <li><a href="#">依城市</a></li>
+                        <li><a href="#">依種類</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="tit" href="#">精選特輯</a>
+                </li>
+                <li>
+                    <a class="tit" href="foodie_blog.html">食客論壇</a>
+                </li>
+                <li>
+                    <a class="tit" href="login.html">
+                        <span class="material-symbols-outlined">
+                        person</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- banner -->
+    <section class="banner">
+        <div class="restaurant-transition">
+            <a href="restaurant_info.html" class="restaurant-food">
+                <img src="homepage_pic/275665340.jpg" alt="飛花落院美食料理餐廳">
+                <div class="place-name">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="txt">台中新社<br>飛花落院美食料理餐廳
+                    </span>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </div>
+            </a>
+            <div class="restaurant-arrow">
+                <div class="restaurant-place">
+                    <img src="homepage_pic/jelezniac-bianca-FTHK04C2FLg-unsplash.jpg" alt="飛花落院美食料理餐廳">
+                </div>
+                <div class="number-bar">
+                    <span>1</span>
+                    <span class="material-symbols-outlined">
+                        maximize
+                    </span>
+                    <span>6</span>
+                </div>
+                <div class="arrow">
+                    <a href="#"><span class="material-symbols-outlined">arrow_circle_left</span></a>
+                    <a href="#"><span class="material-symbols-outlined">arrow_circle_right</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==================搜尋美食=================  -->
+    <section class="search-food-section">
+        <div class="container">
+            <h2 class="search-title">                             
+                <span class="ct-title">搜尋美食</span>
+                <span lang="en" class="eg-title">Search</span>
+            </h2>
+            <div class="search-bar">
+                <div class="search-function">
+                    <div class="for-city">
+                        <!-- <input type="text" placeholder="搜尋城市"> -->
+                        <div class="dropdown">
+                            <select name="縣市地區" id="">
+                                <option value="" >--選擇縣市</option>
+                                <optgroup label="北部">
+                                    <option value="">台北市</option>
+                                    <option value="">新北市</option>
+                                    <option value="">基隆市</option>
+                                    <option value="">桃園市</option>
+                                    <option value="">新竹市</option>
+                                    <option value="">新竹縣</option>
+                                    <option value="">宜蘭縣</option>
+                                </optgroup>
+
+                                <optgroup label="中部">
+                                    <option value="">苗栗縣</option>
+                                    <option value="">台中市</option>
+                                    <option value="">彰化縣</option>
+                                    <option value="">南投縣</option>
+                                    <option value="">雲林縣</option>
+                                </optgroup>
+
+                                <optgroup label="南部">
+                                    <option value="">嘉義市</option>
+                                    <option value="">嘉義縣</option>
+                                    <option value="">台南市</option>
+                                    <option value="">高雄市</option>
+                                    <option value="">屏東縣</option>
+                                    <option value="">澎湖縣</option>
+                                </optgroup>
+
+                                <optgroup label="東部">
+                                    <option value="">花蓮縣</option>
+                                    <option value="">台東縣</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                    <div class="for-restaurant">
+                        <!-- <input type="text" placeholder="美食/餐廳分類"> -->
+                        <div class="dropdown">
+                            <select name="美食/餐廳分類" id="">
+                                <option value="" >--美食/餐廳分類</option>
+                                <optgroup label="美食種類">
+                                    <option value="">燒烤</option>
+                                    <option value="">火鍋</option>
+                                    <option value="">咖哩</option>
+                                    <option value="">麵食</option>
+                                    <option value="">甜點</option>
+                                    <option value="">冰品</option>
+                                    <option value="">蛋糕</option>
+                                </optgroup>
+
+                                <optgroup label="餐廳種類">
+                                    <option value="">寵物友善</option>
+                                    <option value="">景觀餐廳</option>
+                                    <option value="">親子餐廳</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <span class="material-symbols-outlined">restaurant</span>
+                    </div>
+                    <div class="go-search">
+                        <a href="#"><span class="material-symbols-outlined">search</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="search-picture">
+                <a href="choose_restaurant.html" class="city-search search-pic-text">
+                    <div class="pic">
+                        <img src="homepage_pic/place.jpg" alt="依城市">
+                    </div>
+                    <div class="text">
+                        <span class="txt">依城市</span>
+                        <span class="material-symbols-outlined">arrow_circle_right</span>
+                    </div>
+                </a>
+                <a href="choose_restaurant.html" class="food-search search-pic-text">
+                    <div class="pic">
+                        <img src="homepage_pic/foodgroup.jpg" alt="依美食">
+                    </div>
+                    <div class="text">
+                        <span class="txt">依美食</span>
+                        <span class="material-symbols-outlined">arrow_circle_right</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--=============== 網站廣告 ============== -->
+    <section class="web-intro-section">
+        <div class="web-intro-container">
+            <div class="intro-text-box">
+                <div class="text">
+                    <h2>輕鬆搜尋、收藏與分享美食</h2>
+                    <p>吃貨必備，簡單記錄<br>
+                    搜尋好吃店家的美食神器</p>
+                </div>
+            </div>
+            <div class="intro-pic">
+                <img src="homepage_pic/003.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========= 本日推薦 =========-->
+
+     <section class="recom-section">
+        <div class="container">
+            <h2 class="recom-title">
+                <span class="ct-title">本日推薦</span>
+                <sapn class="eg-title" lang="en" >Recommended</sapn>
+            </h2>
+            <div class="recom-pics">
+                <div href="#" class="recom-card">
+                    <a href="restaurant_info.html" class="pic">
+                        <img src="homepage_pic/recom1.jpg" alt="Luxuriant 手作甜點店">
+                    </a>
+                    <div class="star-score">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="score">5.0</span>
+                    </div>
+                    <div class="go-icon">
+                        <span class="material-symbols-outlined">arrow_circle_right</span>
+                    </div>
+                    <h3 class="rest-name">Luxuriant 手作甜點店</h3>
+                </div>
+                <div href="#" class="recom-card">
+                    <a href="restaurant_info.html" class="pic">
+                        <img src="homepage_pic/recom2.jpg" alt="飛花落院美食料理餐廳">
+                    </a>
+                    <div class="star-score">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="score">4.8</span>
+                    </div>
+                    <div class="go-icon">
+                        <span class="material-symbols-outlined">arrow_circle_right</span>
+                    </div>
+                    <h3 class="rest-name">飛花落院美食料理餐廳</h3>
+                </div>
+                <div href="#" class="recom-card">
+                    <a href="restaurant_info.html" class="pic">
+                        <img src="homepage_pic/recom3.jpg" alt="好客燒烤 桃園中壢店">
+                    </a>
+                    <div class="star-score">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="score">4.9</span>
+                    </div>
+                    <div class="go-icon">
+                        <span class="material-symbols-outlined">arrow_circle_right</span>
+                    </div>
+                    <h3 class="rest-name">好客燒烤 桃園中壢店</h3>
+                </div>
+            </div>
+            <div class="recom-arrow">
+                <div class="number-bar">
+                    <span>1</span>
+                    <span class="material-symbols-outlined">maximize</span>
+                    <span>6</span>
+                </div>
+                <div class="arrow">
+                    <a href="#"><span class="material-symbols-outlined">arrow_circle_left</span></a>
+                    <a href="#"><span class="material-symbols-outlined">arrow_circle_right</span></a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- ========= 精選特輯 =========-->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="featured-title">
+                <span class="ct-title">精選特輯</span>
+                <span class="eg-title" lang="en">Featured Topics</span>
+            </h2>
+            <div class="festured-rests">
+                <a href="#" class="featured-card">
+                    <div class="pic">
+                        <img src="homepage_pic/feature1.jpg" alt="">
+                        <span class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </span>
+                    </div>
+                    <h3 class="text">中秋烤肉精選</h3>
+                </a>
+                <a href="#" class="featured-card">
+                    <div class="pic">
+                        <img src="homepage_pic/feature2.jpg" alt="">
+                        <span class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </span>
+                    </div>
+                    <h3 class="text">巷弄隱藏美食</h3>
+                </a>
+                <a href="#" class="featured-card">
+                    <div class="pic">
+                        <img src="homepage_pic/feature3.jpg" alt="">
+                        <span class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </span>
+                    </div>
+                    <h3 class="text">十大必吃甜點</h3>
+                </a>
+            </div>
+            <div class="featured-arrow">
+                <div class="number-bar">
+                    <span>1</span>
+                    <span class="material-symbols-outlined">maximize</span>
+                    <span>6</span>
+                </div>
+                <div class="arrow">
+                    <a href="#"><span class="material-symbols-outlined">arrow_circle_left</span></a>
+                    <a href="#"><span class="material-symbols-outlined">arrow_circle_right</span></a>
+                </div>
+            </div>
+            <a href="#" class="more">
+                <span class="material-symbols-outlined">navigate_next</span>
+                <span>看更多</span>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ===============食客論壇==============  -->
+    <Section class="blog-section">
+        <div class="container">
+            <div class="blog-header">
+                <h2 class="blog-title">
+                    <span class="ct-title">食客論壇</span>
+                    <span class="eg-title" lang="en">Foodie Blog</span>
+                </h2>
+                <!-- <div class="hot-new">
+                    <a href="#" class="hot-title">熱門</a>
+                    <a href="#" class="new-title">最新</a>
+                </div> -->
+            </div>
+            <div class="blog-posts">
+                <a href="#" class="blog-card">
+                    <span class="post-date">Feb 16, 2022</span>
+                    <div class="pic">
+                        <img src="homepage_pic/blog1.jpg" alt="">
+                        <div class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </div>
+                    </div>
+                    <h3 class="post-title">📍新竹｜墨竹亭｜燃麵本家💖「超人氣文青銷魂麵食，好吃又平價！</h3>
+                    <div class="writer">
+                        <div class="writer-pic">
+                            <img src="homepage_pic/writer1.jpg" alt="">
+                        </div>
+                        <span class="writer-name">foodie</span>
+                    </div>
+                </a>
+                <a href="#" class="blog-card">
+                    <span class="post-date">Sep 20, 2022</span>
+                    <div class="pic">
+                        <img src="homepage_pic/blog2.jpg" alt="">
+                        <div class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </div>
+                    </div>
+                    <h3 class="post-title">雲朵披薩🍕！海鮮滿滿｜結合澎湖得天獨厚的食材</h3>
+                    <div class="writer">
+                        <div class="writer-pic">
+                            <img src="homepage_pic/writer2.jpg" alt="">
+                        </div>
+                        <span class="writer-name">Jenny</span>
+                    </div>
+                </a>
+                <a href="#" class="blog-card">
+                    <span class="post-date">Aug 11, 2022</span>
+                    <div class="pic">
+                        <img src="homepage_pic/blog3.jpg" alt="">
+                        <div class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </div>
+                    </div>
+                    <h3 class="post-title">正宗美式漢堡，國父紀念館重量級美味，滿滿的用心一口咬下就知道！</h3>
+                    <div class="writer">
+                        <div class="writer-pic">
+                            <img src="homepage_pic/writer3.jpg" alt="">
+                        </div>
+                        <span class="writer-name">Sam</span>
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="more">
+                <span class="material-symbols-outlined">navigate_next</span>
+                <span>看更多</span>
+            </a>
+        </div>
+    </Section>
+    
+
+    <!--=========== footer ============-->
+    <section class="main-footer">
+        <div class="container">
+            <div class="footer-group">
+                <div class="footer-item">
+                    <a class="footer-header" href="login.html">加入會員</a>
+                    <a class="footer-header" href="#">服務條款</a>
+                    <a class="footer-header" href="#">隱私政策</a>
+                    <a class="footer-header" href="#">傳送意見回饋</a>
+                </div>
+                <div class="footer-item">
+                    <a class="footer-header" href="choose_restaurant.html">搜尋店家</a>
+                    <nav class="footer-list">
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 快速搜尋</a>
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 依城市</a>
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 依種類</a>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <a class="footer-header" href="#">推薦店家</a>
+                    <nav class="footer-list">
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 最新店家</a>
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 優惠活動</a>
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 領取優惠券</a>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <a class="footer-header" href="#">精選特輯</a>
+                    <nav class="footer-list">
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 必比登精選</a>
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 異國風料理</a>
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 巷弄隱藏版美食</a>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <a class="footer-header" href="foodie_blog.html">食客論壇</a>
+                    <nav class="footer-list">
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 熱門文章</a>
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 人氣美食客</a>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <a class="footer-header" href="#">關於我們</a>
+                    <nav class="footer-list">
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 聯絡我們</a>
+                        <a href="#"><i class="fa-solid fa-angle-right"></i> 最新消息</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-social">
+                <nav>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy;Food burger
+        </div>
+    </section>

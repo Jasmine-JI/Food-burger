@@ -1,0 +1,70 @@
+:root {
+  
+    --eg-font:'Niramit', sans-serif;
+    --ct-font:'Noto Sans TC', sans-serif;
+    
+    --eg-h2fs:72PX;
+    --h1-fs:32px;
+    --h2-fs:28px;
+    --h2-24-fs:24px;    
+    --h3-fs:18px;
+    --text-fs:15px; 
+    --number-bar-fs:14px;
+
+    --base:#FFF9F0;
+    --main-text:rgba(68, 81, 75, 1);
+    --intro-color:#D5AD78;
+    --eg-font-color:rgb(213, 173, 120, 0.28);
+    --star-color:#FFC800;
+    --small-text-color:#CCC9AB;
+    --text-color:#303030;
+
+
+    --color1:#725747;
+    --color2:#7A8C88;
+
+    --bnt-color:#555f53;
+
+    --base2:#ccc6be;
+
+}
+
+
+
+body{
+    font-family:'Niramit','Noto Sans TC'
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =======go-icon========= */
+
+.go-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.go-icon span{
+    font-size: 50px;
+    color: #fff;
+
+    font-variation-settings:
+    'wght' 200;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.blog-card:hover .go-icon span{
+    opacity: 1;
+    font-variation-settings:
+    'FILL' 1;
+}
+/* ================= */

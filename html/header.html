@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css">s
+    <style>
+        .main-header{
+	    background: rgb(255, 236, 185);
+        }
+        .main-header .container{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .main-header .logo{
+            width: 100px;
+        }
+        .main-header .logo img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .main-header .main-nav{
+            margin: auto;
+            display: flex;
+        }
+        .main-header .main-nav a{
+            font-family: 'Noto Sans TC', sans-serif;
+            text-decoration: none;
+            color:  rgba(68, 81, 75, 1);
+            padding: 5px 1em;
+            position: relative;
+            transform: translateY(0px);
+            transition: .3s;
+        }
+        .main-header .main-nav a:hover{
+            transform: translateY(-10px);
+        }
+        .main-header .main-nav a:after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: -5px;
+            height: 0;
+            border-bottom: 1px solid #fff;
+            transition: .3s;
+        }
+        .main-header .main-nav a:hover:after{
+            left: 1em;
+            right: 1em;
+        }
+
+        .main-header .header-search{
+            display: flex;
+        }
+        .main-header .header-search button,
+        .main-header .header-search input{
+            border:none;
+            background-color: #fff;
+            padding: 5px 10px;
+        }
+        .main-header .header-search button:focus,
+        .main-header .header-search input:focus{
+            outline: none;
+        }
+        .main-header .header-search button{
+            border-radius: 0 200px 200px 0;
+        }
+        .main-header .header-search input{
+            border-radius: 200px 0 0 200px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="homepage_pic/logo.png" alt="">
+            </a>
+            <nav class="main-nav">
+                <a href="#">搜尋美食</a>
+                <a href="#">精選特輯</a>
+                <a href="#">食客論壇</a>
+                <a href="#"><span class="material-symbols-outlined">
+                    person</span></a>
+            </nav>
+            <form class="header-search">
+                <input type="search" name="" id="">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+</body>
+</html>

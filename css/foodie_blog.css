@@ -1,0 +1,336 @@
+/* ======header====== */
+.main-nav li:nth-child(3){
+    border-bottom: 5px solid var(--intro-color);
+
+}
+
+/* ======banner====== */
+.blog-banner{
+    width: 100%;
+    margin: auto;
+    /* position: relative; */
+
+}
+.blog-banner .pic{
+    margin: auto;
+    width: 100%;
+    height: 650px;
+}
+.blog-banner .pic img{
+    width: 100%;
+    height: 100%;
+
+
+    object-fit: cover;
+    vertical-align: middle;
+    object-position: top center;
+}
+.blog-banner .title{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-family: var(--ct-font);
+    font-weight: 600;
+    font-size: var(--h1-fs);
+    color: #fff;
+    
+    text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.474);
+}
+
+
+/*========= 論壇文章 ========*/
+.foodie-blog{
+    width: 100%;
+    /* background-image:linear-gradient(180deg, rgb(255, 249, 240) 10%,transparent); */
+}
+
+.foodie-blog .container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========最新熱門/搜尋/發表文章=========== */
+.foodie-blog .blog-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 100px 0px;
+}
+
+
+.blog-header .hot-new{
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hot-new .hot-title,
+.hot-new .new-title{
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+
+    text-decoration: none;
+    font-family: var(--ct-font);
+    font-weight: 400;
+    font-size: var(--h2-24-fs);
+    color: var(--main-text);
+}
+
+.hot-new .hot-title{
+    border-bottom:1px solid var(--small-text-color) ;
+}
+
+.hot-new .new-title{
+    color: var(--small-text-color);
+    font-size: var(--h3-fs);
+}
+
+.blog-header .function{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-header .function a{
+    text-decoration: none;
+}
+
+.blog-header .search{
+    display: flex;
+    width: 50%;
+    height: 30px;
+
+}
+.blog-header .search button,
+.blog-header .search input{
+    border:none;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+.blog-header .search button:focus,
+.blog-header .search input:focus{
+    outline: none;
+}
+.blog-header .search button{
+    border: 1px solid var(--main-text);
+    border-left: none;
+    border-radius: 0 200px 200px 0;
+
+}
+.blog-header .search input{
+    border: 1px solid var(--main-text);
+    border-right: none;
+    border-radius: 200px 0 0 200px;
+}
+
+.blog-header .new-post{
+    width:fit-content;
+    display: flex;
+    align-items: center;
+
+    padding: 6px;
+    background-color:transparent;
+    border:none;
+    /* border-radius: 10px;
+    background-color:var(--bnt-color);
+    color:#fff; */
+    border-radius: 20px;
+    background-color:var(--intro-color);
+    color:var(--color1);
+}
+
+.blog-header .new-post:hover{
+    background-color:var(--bnt-color);
+    color: #fff;
+}
+
+.blog-header .new-post{
+    font-family: var(--ct-font);
+    font-size: var(--number-bar-fs);
+}
+
+/* .blog-header .new-post:hover{
+    background-color:var(--main-text);
+    color: #fff;
+} */
+
+
+/* ===========文章posts============== */
+
+.blog-posts{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.post-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    text-decoration: none;
+}
+.post-card + .post-card{
+    border-top: 1px dashed var(--base2);
+}
+
+.post-card .post-contain{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-contain .head{
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .writer{
+    display: flex;
+    align-items: center;
+}
+
+.head .writer .writer-pic{
+    width: 40px;
+    height: 40px;
+}
+
+.writer .writer-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.writer .name{
+    margin-left: 20px;
+    font-size: var(--text-fs);
+    font-family: var(--eg-font);
+    color: var(--intro-color);
+    font-weight: 100;
+}
+
+.head .hashtag{
+    display: flex;
+    justify-content: space-between;
+}
+.head .hashtag span{
+    margin-left:20px;
+    padding: 4px 10px 0;
+    width: fit-content;
+    height: 20px;
+
+    background-color:var(--eg-font-color);
+    border-radius: 30px;
+    color: var(--intro-color);
+    font-family: var(--ct-font);
+}
+
+.post-contain .about-post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about-post .title-conntent{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-conntent .post-title{
+    margin: 0 0 20px;
+
+    font-family: var(--ct-font);
+    font-size: var(--h3-fs);
+    font-weight: 600;
+    color: var(--main-text);
+}
+
+.title-conntent .post-content{
+    margin: 0 0 20px;
+
+    font-family: var(--ct-font);
+    font-size: var(--text-fs);
+    font-weight: 200;
+    color: gray;
+}
+
+.about-post .detail{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0;
+
+}
+
+.detail .like-comment{
+    font-family: var(--ct-font);
+    font-size: var(--number-bar-fs);
+    font-weight: 300;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-comment .like,
+.like-comment .comment{
+    display: flex;
+    align-items: center;
+
+    color:var(--main-text);
+}
+
+.like-comment .number{
+    margin-left: 5px;
+}
+
+.detail .date{
+    color: var(--intro-color);
+    font-family: var(--ct-font);
+    /* font-weight: 200; */
+    font-size: var(--text-fs);
+}
+.post-card .pic{
+    width: 40%;
+    height: 180px;
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+
+.post-card .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.blog-posts .number-bar{
+    text-align: center;
+    margin-top: 50px;
+
+}
+.blog-posts .number-bar a{
+    text-decoration: none;
+    font-family: var(--ct-font);
+    font-size: var(--number-bar-fs);
+    color: var(--small-text-color);
+
+    padding: 10px;
+}
+
+.blog-post .number-bar a:hover{
+    color: var(--bnt-color);
+}

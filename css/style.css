@@ -1,0 +1,897 @@
+
+
+
+/*banner*/
+
+.restaurant-transition{
+    display: flex;
+    justify-content:space-between;
+    height: 700px;
+    background-color: rgb(255, 249, 240);
+}   
+
+
+.restaurant-food{
+    width: 60%;
+    height: 100%;
+    position: relative;    
+}
+
+.restaurant-food img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+    border-radius: 0px 300px 0px 0px;
+}
+
+.restaurant-food .place-name{
+    display: flex;   
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    color: rgb(255, 254, 252);    
+    text-decoration: none;
+    align-items:flex-end;
+}
+
+.restaurant-food i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.restaurant-food .txt{
+    /* font-family:'Noto Sans TC', sans-serif; */
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px rgba(255, 254, 251, 0.386);
+    letter-spacing: 2px;
+
+}
+
+
+.restaurant-arrow{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}   
+
+.restaurant-arrow .restaurant-place{
+    width:100%;
+    height: 70%;
+
+}
+
+.restaurant-place img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: left center;
+    border-radius: 0px 0px 0px 350px;
+}
+
+.restaurant-arrow .number-bar{
+    width: 30%;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: -100px;
+
+}
+
+
+.restaurant-arrow .arrow{
+    display: flex;
+    width: 35%;
+    justify-content:space-between;
+    /* margin-top: auto; */
+}
+
+.restaurant-arrow .arrow span{
+    margin-left: 15px;
+    font-size: 50px;
+    color:rgba(68, 81, 75, 1);
+}
+
+.restaurant-arrow .arrow span:hover{
+    font-variation-settings: 'FILL' 1
+}
+
+
+/* ====================搜尋美食===================*/
+.search-food-section{
+    width: 100%;
+    background-image:linear-gradient(180deg, rgb(255, 249, 240) 50%,transparent);
+}
+
+/* .search-food-section .container{
+    width: 1200px;
+    margin: auto;
+}  */
+
+.search-title{
+    padding-top: 100px;
+    /* height: 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+
+}
+
+.search-title .ct-title{
+    /* font-family:'Noto Sans TC', sans-serif; */
+    font-size: 28px;
+    color:rgba(68, 81, 75, 1) ;
+    font-weight: 500;
+    padding-bottom: 90px;
+}
+
+.search-title .eg-title{
+    /* font-family: 'Niramit', sans-serif; */
+    font-size: 72PX;
+    color: rgba(213, 173, 120, 0.28);
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: -110px;
+    left: -90px;
+}
+
+.search-bar{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    /* background-color: rgb(255, 249, 240); */
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    transform: rotateY(-20px); 
+}
+
+.search-function{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 3px 5px 4px 2px hsl(30, 100%, 94%);
+    border-radius: 30px;
+    position: relative;
+}
+
+.search-function input{
+    width: 100%;
+    border: none;
+    outline: 0;
+}
+
+.search-function span{
+    color:rgba(68, 81, 75, 1) 
+}
+
+/* 
+.for-city::after{
+    content: '';
+    width: 1px;
+    width: 5px;
+    color: gray;
+    position: absolute;
+    left: 100%;
+} */
+.for-city, .for-restaurant, .go-search{
+    padding: 0 10px;
+}
+.for-city, .for-restaurant{
+    width: calc((100%-50px)/2);
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 5px; */
+}
+
+/* .for-city input, .for-restaurant input{
+    border:none
+} */
+
+
+.go-search{
+    width: 15px;
+    height: 35px;
+    border-radius: 50%;
+    background-color:rgba(68, 81, 75, 1) ;
+    margin:0 15px;
+    /* position: relative; */
+}
+
+.go-search span{
+    color: #fff;
+    /* position: absolute; */
+    transform: translate(-10%,30%);
+    top: 50%;
+    left: 50%;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.dropdown select {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background: none;
+
+}
+
+/* ======search-picture======== */
+.search-picture{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.search-picture .city-search,
+ .search-picture .food-search{
+    width: 50%;
+    position: relative;
+}
+.search-picture .pic{
+    width: 100%;
+    height: 550px;
+}
+
+.city-search img, .food-search img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition: filter,.7s;
+}
+
+/* .search-picture a{
+    text-decoration: none;
+} */
+
+.search-picture .txt, 
+.search-picture .material-symbols-outlined {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+
+.city-search .text, .food-search .text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-search .text{
+    left:45%
+}
+
+.search-picture .txt{
+    /* font-family: var(--ct-font); */
+    font-weight: 400;
+    text-shadow: 2px 2px 5px rgb(191, 147, 76);
+    letter-spacing: 2px;
+}
+.search-picture .material-symbols-outlined {
+    font-size: 50px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300
+}
+
+.search-pic-text:hover .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 1
+}
+.search-pic-text:hover img{
+    filter: brightness(70%);
+}
+
+
+
+/* ================網站介紹================== */
+.web-intro-section{
+    margin: 150px 0 100px;
+    width: 100%;
+}
+
+.web-intro-section .web-intro-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+
+}
+
+.web-intro-section .intro-text-box{
+    width: 70%;
+    height: 100%;
+    margin-right: -10%;
+    background-color:rgb(255, 249, 240);
+    
+    
+    border-radius: 0 0 60px 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .intro-text-box .text{
+    width: 50%;
+
+ }
+
+.intro-text-box .text h2, 
+.intro-text-box .text p{
+    font-family:'Noto Sans TC', sans-serif;
+    color:rgba(213, 173, 120, 1);
+    font-size:32px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing:1px ;
+}
+
+.intro-text-box .text p{
+    font-size: 20px;
+    color: rgba(139, 125, 97, 1);
+    font-weight: 400;
+    text-shadow:0px 1px 3px rgb(177, 177, 177);
+
+    margin-top:100px;
+}
+
+
+.web-intro-section .intro-pic{
+    width: 40%;
+    height: 70%;
+    position: relative;
+}
+
+.intro-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===============本日推薦============== */
+.recom-section{
+    width: 100%;
+    margin: 0 0 100px;
+}
+
+
+
+.recom-title{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.recom-title .ct-title{
+    font-size: var(--h2-fs);
+    color:var(--main-text);
+    font-weight: 500;
+    padding-bottom: 90px;
+
+    position: absolute;
+    right: 10%;
+}
+
+.recom-title .eg-title{
+    font-family:var(--eg-font);
+    font-size: 72PX;
+    color: rgba(224, 198, 162, 0.512);
+    transform: rotate(90deg);
+
+    position: absolute;
+    right: -15%;
+    top: 200%;
+}
+
+.recom-pics{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recom-pics .recom-card{
+    width: calc(95% / 3);
+    height: 280px;
+    /* display: flex;
+    flex-direction: column; */
+    margin: 15px 0;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.recom-card .pic{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 60px; */
+
+
+}
+.recom-card .pic img{
+    width: 100%;
+    height: 100%;    
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 20px;
+
+
+    filter: brightness(100%);
+    transition: filter .5s;
+}
+
+.star-score{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width: 65px; */
+    background-color: rgba(255, 255, 255, 0.345);
+    display: flex;
+    /* justify-content: center; */
+    align-items:center;
+    padding: 5px;
+    border-radius: 0 0 0 8px;
+}
+
+.star-score .material-symbols-outlined{
+    color:var(--star-color);
+    font-variation-settings:'FILL' 1
+}
+
+.star-score .score{
+    /* font-family: var(--eg-font); */
+    font-weight:100;
+    font-size: 16px;
+    color: #fff;
+    margin:3px 8px 0;
+}
+
+.recom-card .go-icon span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+
+.recom-card:hover .go-icon span{
+    opacity: 1;
+    font-variation-settings:
+    'FILL' 1;
+}
+
+.recom-card:hover img{
+    filter: brightness(70%);
+}
+
+.recom-card .rest-name{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: var(--h3-fs);
+    letter-spacing: 1px;
+
+}
+.recom-arrow{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 0px;
+
+}
+
+.recom-arrow .number-bar{
+    width: 10%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+
+    /* font-family: var(--eg-font); */
+    font-weight: 100;
+    color: var(--main-text);
+    font-size: 14px;
+}
+
+.recom-arrow .number-bar .material-symbols-outlined{
+    padding: 5px 30px 0px;
+}
+
+
+.recom-arrow .arrow{
+    display: flex;
+    /* width: 12%;
+    justify-content:space-between; */
+
+    margin-top: 10px;
+
+
+}
+
+.recom-arrow .arrow span{
+    font-variation-settings:'wght'300;
+    font-size: 50px;
+    color:var(--main-text);
+}
+
+.recom-arrow .arrow span:hover{
+    font-variation-settings: 'FILL' 1
+} 
+
+
+
+/* ===============精選特輯============== */
+.featured-section{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+.featured-title{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.featured-title .ct-title{
+    font-size: var(--h2-fs);
+    color:rgba(68, 81, 75, 1) ;
+    font-weight: 500;
+
+    position: absolute;
+    left: 7%;
+}
+
+.featured-title .eg-title{
+    font-size: var(--eg-h2fs);
+    color: var(--eg-font-color);
+    transform: rotate(-90deg);
+    position: absolute;
+    top:320%;
+    left:-20%;
+}
+
+.festured-rests{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.featured-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(88% / 3);
+    margin-left:25px;
+
+}
+
+.featured-card .pic{
+    width: 100%;
+    height: 450px;
+    position: relative;
+
+}
+
+.featured-card .pic img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition: filter .3s;
+}
+
+.featured-card .go-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.featured-card .go-icon span{
+    font-size: 50px;
+    color: #fff;
+
+    font-variation-settings:
+    'wght' 200;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.featured-card:hover .go-icon span{
+    opacity: 1;
+    font-variation-settings:
+    'FILL' 1;
+}
+.featured-card:hover img{
+    filter: brightness(70%);
+}
+
+.featured-card .text{
+    /* font-family: var(--ct-font); */
+    font-weight: 500;
+    font-size: var(--h3-fs);
+    color: var(--main-text);
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+.featured-arrow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 0px;
+
+}
+
+.featured-arrow .number-bar{
+    /* font-family:var(--eg-font); */
+    font-size: 14px;
+    padding-top: 10px;
+
+    display: flex;
+    margin-left: 8%;
+    /* justify-content: flex-start; */
+}
+.featured-arrow .number-bar .material-symbols-outlined{
+    padding: 5px 30px 0px;
+}
+
+.featured-arrow .arrow{
+    display: flex;
+    /* width: 12%;
+    justify-content:space-between; */
+    margin-top: 10px;
+
+}
+
+.featured-arrow .arrow span{
+    font-variation-settings:'wght'300;
+    font-size: 50px;
+    color:var(--main-text);
+    margin-left: 20px;
+}
+
+.featured-arrow .arrow span:hover{
+    font-variation-settings: 'FILL' 1
+} 
+
+.more{
+    /* margin:auto; */
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+
+    /* font-family: vsar(--ct-font); */
+    font-weight: 500;
+    color:var(--small-text-color)
+}
+
+.more:hover{
+    color: var(--main-text);
+}
+
+
+
+/* ===============食客論壇============== */
+.blog-section{
+    width: 100%;
+    background-image:linear-gradient(180deg, var(--base) 5%,transparent);
+}
+
+
+.blog-header{
+    width: 100%;
+    padding-top: 70px;
+    /* margin-bottom: 100px; */
+
+}
+
+/* .blog-header .blog-title,
+.blog-header .hot-new{
+    width: 100%;
+    display: flex;
+} */
+
+.blog-header .blog-title{    
+    height: 100px;
+    flex-direction: column;
+    position: relative;
+}
+
+.blog-title .ct-title{
+    font-size: var(--h2-fs);
+    color:var(--main-text);
+    font-weight: 500;
+    /* padding-bottom: 50px; */
+
+    position: absolute;
+    right: 10%;
+}
+
+.blog-title .eg-title{
+    font-family:var(--eg-font);
+    font-size: 72PX;
+    color: var(--eg-font-color);
+    transform: rotate(90deg);
+
+    position: absolute;
+    right: -11%;
+    top: 150%;
+}
+
+.blog-header .hot-new{
+    width: 18%;
+    justify-content: space-between;
+}
+
+.hot-new .hot-title,
+.hot-new .new-title{
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+
+    text-decoration: none;
+    font-family: var(--ct-font);
+    font-weight: 400;
+    font-size: var(--h3-fs);
+    color: var(--main-text);
+}
+
+.hot-new .hot-title{
+    border-bottom: 5px solid var(--intro-color);
+}
+.hot-new .new-title{
+    color: var(--small-text-color);
+}
+
+.blog-posts{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-card{
+    width:calc(95% / 3);
+    /* box-sizing: border-box; */
+    /* margin-right: 50px; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    /* align-items: center; */
+}
+
+.blog-card .post-date{
+    padding:0 5px 5px;
+    font-family: var(--ct-font);
+    color: var(--intro-color);
+    font-size: 15px;
+
+}
+.blog-card .pic{
+    width: 100%;
+    height: 200px;
+    /* margin-right: 10px; */
+    position: relative;
+}
+
+.blog-card .pic img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    vertical-align: middle;
+    object-fit: cover;
+
+    transition: filter .3s;
+}
+
+.blog-card:hover .pic img{
+    filter: brightness(70%);
+}
+
+
+.blog-card .go-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.blog-card .go-icon span{
+    font-size: 50px;
+    color: #fff;
+
+    font-variation-settings:
+    'wght' 200;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.blog-card:hover .go-icon span{
+    opacity: 1;
+    font-variation-settings:
+    'FILL' 1;
+}
+
+.blog-card .post-title{
+    padding: 10px 0;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    /* font-family: var(--ct-font); */
+    font-weight: 300;
+    color: var(--main-text);
+}
+
+.blog-card .writer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: auto;
+
+}
+
+.blog-card .writer-pic{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    
+}
+
+.blog-card .writer-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.blog-card .writer-name{
+    font-size: 12px;
+    /* font-family: var(--eg-font); */
+    color: var(--intro-color);
+    font-weight: 100;
+}
+
+.blog-section .more{
+    margin-top: 70px;
+    /* justify-content: flex-end; */
+}
+

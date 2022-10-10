@@ -1,0 +1,248 @@
+/* ========main header========= */
+
+.main-header{
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.44);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-bar{    
+    width: 1200px;
+    margin:auto;
+    display: flex;
+    justify-content:flex-start;
+    margin: auto;
+    padding: 10px; 
+
+}
+
+.logo{
+    width: 130px;
+    height: 40px;
+    margin-top: 13px;;
+}
+
+.logo img {
+    width: 100%;
+    vertical-align: top;
+}
+.main-nav >  li{
+    position: relative;
+}
+.main-nav > li:hover ul {
+    display: block;
+}
+.main-nav .tit {
+    display: block;
+    padding: 10px;
+    font-family:'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    list-style: none;
+    text-decoration: none;   
+    /* display: inline-block; */
+    color: rgba(68, 81, 75, 1);
+    transform: translateY(0px);
+    transition: .3s;
+}
+.main-nav  ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    background: rgba(255, 249, 241, 0.57);
+    width: 110px;
+    
+
+}
+.main-nav  ul li {
+    padding: 10px;
+    text-align: center;
+}
+.main-nav  ul a {
+    text-decoration: none;
+    color: var(--main-text); 
+}
+
+.main-nav .tit:hover{
+    transform: translateY(-4px);
+}
+
+.main-nav .tit:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -6px;
+    height: 0;
+    border-bottom: 1px solid var(--intro-color);
+    transition: .3s;
+}
+
+.main-header .main-nav .tit:hover:after{
+    left: 1em;
+    right: 1em;
+}
+
+
+#menu-switch{
+    display: none;
+}
+
+
+@media screen and (max-width:767px) {
+    .main-header{
+        display: flex;
+        justify-content:space-between;
+    }
+    
+        
+    .hb{
+        width: 40px;
+        height: 40px;
+        background-color: #666;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+
+    .hb span{
+        width: 32px;
+        height: 2px;
+        background-color: #000;
+    }
+
+    .main-nav{
+    /* display: none; */
+    position: absolute;
+    background-color: #fa0;
+    width: 100%;
+    left: -100%;
+    top: 100%;
+    opacity: 0;
+    transition: opacity 1s 0s,
+                left 0s 1s;
+    }
+
+    #menu-switch:checked + .main-header .main-nav{
+    /* display: block; */
+    left: 0;
+    opacity: 1;
+    transition: opacity 1s;
+    }
+
+    #menu-switch:checked + .main-header .hb span:nth-child(2){
+        display: none;
+    }
+
+    #menu-switch:checked + .main-header .hb span:nth-child(1){
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: rotate(45deg);
+        
+    }
+
+    #menu-switch:checked + .main-header .hb span:nth-child(3){
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+@media screen and (min-width:768px) {
+    .hb{display: none;}
+    .main-nav{
+        display: flex;
+        width: fit-content;
+        margin-top: 5px;
+        margin-left: 20px; 
+    }            
+}
+
+
+/* ===========footer =========*/
+.main-footer{
+    margin-top:200px;
+    padding: 50px 0 0;
+    background:var(--base);
+}
+
+.main-footer .container{
+    padding: 0 15px;
+}
+
+.footer-group{
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 30px;
+    justify-items: center; */
+}
+/* .footer-item{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto; 
+} */
+
+.footer-item .footer-header{
+    display:flex;
+    flex-direction:column;
+    font-size: 15px;
+
+    font-weight: 400;
+    color: var(--intro-color);
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+.footer-item .footer-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list a{
+    /* font-family:'Noto Sans TC', sans-serif; */
+    font-weight:200;
+    color:var(--text-color);
+    letter-spacing: 0.75px;
+    line-height: 1.5;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.footer-social{
+    /* display: flex; */
+    width:fit-content;
+    font-size: 22px;
+    margin-left: auto;
+
+}
+.footer-social a{
+    font-size: 28px;
+    color: var(--intro-color);
+    margin-left: 15px;
+}
+.copyright{
+    width: 100%;
+    background-color:var(--color1);
+    text-align: center;
+    /* margin:50px 0 0; */
+    padding: 15px 0px;
+    color: var(--intro-color);
+}
+    
+    

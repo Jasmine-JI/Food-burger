@@ -23,9 +23,9 @@
 
 .writer .container{
     width: 60%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .writer .writer-info{
@@ -33,6 +33,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 
 .writer-info .pic{
     width: 50px;
@@ -93,8 +94,7 @@ color:var(--color1)
 }
 
 .post-content .container{
-    width: 60%;
-    margin: auto;
+    /* width: 60%; */
     display: flex;
     flex-direction: column;
 }
@@ -113,7 +113,7 @@ color:var(--color1)
 .title-date .title{
     margin: 0 0 15px;
 
-    font-family: var(--ct-font);
+
     font-size: var(--h3-fs);
     font-weight: 600;
     color: var(--main-text);
@@ -140,7 +140,8 @@ color:var(--color1)
 }
 
 .post-content .pictures{
-    width: 100%;
+    width:100%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -156,11 +157,13 @@ color:var(--color1)
 
 .post-content .pictures .pics{
     display: flex;
+    justify-content: center
+
 
 }
 
 .pictures .pics .pic{
-    width: 150px;
+    width: 150px; 
     height: 150px;
     margin: 0 10px;
     overflow: hidden;

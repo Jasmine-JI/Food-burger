@@ -4,17 +4,34 @@
 
 }
 
+/* =======banner======== */
+.banner{
+    width: 100%;
+    position: relative;
+}
+
+.banner .pic{
+    width: 100%;
+    height: 400px;
+}
+.banner .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
 
 /* 選擇餐廳 */
 .choose-restaurant{
     width: 100%;
-    margin-top: 100px;
+
 }
 
-.choose-restaurant .container{
+/* .choose-restaurant .container{
     width: 1200px;
     margin: auto;
-}
+} */
 
 .choose-restaurant .header{
     width: 100%;
@@ -39,10 +56,10 @@
 .city .eg-title{
     font-family: 'Niramit', sans-serif;
     font-size: 72PX;
-    color: rgba(213, 173, 120, 0.28);
+    color: rgb(255, 255, 255);
     position: absolute;
-    top: 100px;
-    left: 150px;
+    top: 300px;;
+    right: 150px;
 }
 
 

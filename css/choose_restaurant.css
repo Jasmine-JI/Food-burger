@@ -35,9 +35,8 @@
 
 .choose-restaurant .header{
     width: 100%;
-    height: 100px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .header .city{
@@ -62,18 +61,21 @@
     right: 150px;
 }
 
+.function{
+    margin-left: auto;
+    padding: 2% 0;
+}
 
 .header .search{
     display: flex;
-    width: 50%;
-    height: 30px;
 }
 
 .header .search button,
 .header .search input{
     border:none;
     background-color: rgb(255, 255, 255);
-    padding: 5px 10px;
+    padding: 10px 10px;
+
 }
 
 .header .search button:focus,
@@ -94,25 +96,26 @@
 }
 
 .type-restaurant{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
 
 .filter-option{
     width: 10%;
     height: max-content;
     padding: 20px;
     position: sticky;
+    top: 10%;
     background-color: #fff;
     box-shadow: 1px 1px 5px rgb(242, 228, 200) ;
-
 }
 
 .filter-option .type{
     margin-bottom: 20px;
 }
+
 .filter-option .type a{
     text-decoration: none;
     line-height: 1.5;
@@ -125,10 +128,10 @@
 .filter-option .type li{
     line-height: 1.5;
     margin-bottom: 5px;
-
     font-family: var(--ct-font);
     font-size: var(--text-fs);
     color: var(--text-color);
+    accent-color: var(--star-color);
 
 }
 
@@ -154,9 +157,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 1px 1px 5px var(--small-text-color);
-
 }
-
 
 .card .pic{
     width: 100%;
@@ -186,7 +187,6 @@
 .card .rest-adress{
     font-size: var(--text-fs);
     color:#888;
-
 }
 
 
@@ -201,7 +201,6 @@
     font-family: var(--ct-font);
     font-size: var(--number-bar-fs);
     color: var(--small-text-color);
-
     padding: 10px;
 }
 

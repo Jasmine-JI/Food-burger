@@ -9,12 +9,12 @@
 }
 
 .nav-bar{    
-    width: 100%;
+    max-width: 1200px;
     margin:auto;
     display: flex;
     justify-content:flex-start;
     margin: auto;
-    margin: 10px;
+    padding: 10px 0;
 }
 
 .logo{
@@ -30,9 +30,11 @@
 .main-nav >  li{
     position: relative;
 }
+
 .main-nav > li:hover ul {
     display: block;
 }
+
 .main-nav .tit {
     display: block;
     padding: 10px;
@@ -82,13 +84,15 @@
     right: 1em;
 }
 
-
 #menu-switch{
     display: none;
 }
 
-
 @media screen and (max-width:767px) {
+    .nav-bar{
+        margin: 10px;
+    }
+
     .logo{
         margin: auto;
         order: 1;
@@ -100,15 +104,37 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
+        align-items:flex-start;
         position: relative;
-    
+        cursor: pointer;
     }
 
     .hb span{
         width: 32px;
         height: 2px;
         background-color: var(--main-text);
+        transition:all 0.2s ease-in-out;
+    }
+
+    .hb span:nth-child(2){
+        width: 22px;
+    }
+
+    .hb span:nth-child(3){
+        width: 27px;
+    }
+
+    .hb:hover span{
+        width: 42px;
+        background-color: var(--base2);
+    }
+
+    .hb:hover span:nth-child(2){
+        width: 27px;
+    }
+        
+    .hb:hover span:nth-child(3){
+        width: 32px;
     }
 
     .main-nav{
@@ -132,13 +158,7 @@
         margin: auto;
     }
 
-    /* .main-nav > li:hover+li{
-        margin-top: 10%;
-  
-    } */
-
     #menu-switch:checked + .main-header .main-nav{
-    /* display: block; */
     left: 0;
     opacity: 1;
     transition: opacity 1s;
@@ -149,6 +169,7 @@
     }
 
     #menu-switch:checked + .main-header .hb span:nth-child(1){
+        width: 32px;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -160,6 +181,7 @@
     }
 
     #menu-switch:checked + .main-header .hb span:nth-child(3){
+        width: 32px;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -169,7 +191,6 @@
         transform: rotate(-45deg);
     }
 }
-
 
 
 @media screen and (min-width:768px) {

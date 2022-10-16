@@ -61,7 +61,8 @@
     color: var(--main-text); 
 }
 
-.main-nav .tit:hover{
+.main-nav .tit:hover,
+.main-nav ul li:hover{
     transform: translateY(-4px);
 }
 

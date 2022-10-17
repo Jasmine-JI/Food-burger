@@ -172,29 +172,16 @@
     color:rgba(68, 81, 75, 1) 
 }
 
-/* 
-.for-city::after{
-    content: '';
-    width: 1px;
-    width: 5px;
-    color: gray;
-    position: absolute;
-    left: 100%;
-} */
 .for-city, .for-restaurant, .go-search{
     padding: 0 10px;
 }
+
 .for-city, .for-restaurant{
     width: calc((100%-50px)/2);
     display: flex;
     justify-content: space-between;
     /* margin: 0 5px; */
 }
-
-/* .for-city input, .for-restaurant input{
-    border:none
-} */
-
 
 .go-search{
     width: 15px;

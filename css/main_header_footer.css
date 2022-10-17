@@ -27,7 +27,7 @@
     width: 100%;
     vertical-align: top;
 }
-.main-nav >  li{
+.main-nav > li{
     position: relative;
 }
 
@@ -35,7 +35,8 @@
     display: block;
 }
 
-.main-nav .tit {
+.main-nav .tit,
+.login{
     display: block;
     padding: 10px;
     font-weight: 500;
@@ -64,7 +65,8 @@
 }
 
 .main-nav .tit:hover,
-.main-nav ul li:hover{
+.main-nav ul li:hover,
+.login:hover{
     transform: translateY(-4px);
 }
 
@@ -88,6 +90,10 @@
     display: none;
 }
 
+.login span{
+    color: var(--main-text);
+}
+
 @media screen and (max-width:767px) {
     .nav-bar{
         margin: 10px;
@@ -96,6 +102,10 @@
     .logo{
         margin: auto;
         order: 1;
+    }
+
+    .login{
+        order: 2;
     }
 
     .hb{
@@ -195,7 +205,8 @@
 
 @media screen and (min-width:768px) {
     .hb{display: none;}
-    .main-nav{
+    .main-nav,
+    .login{
         display: flex;
         width: fit-content;
         margin-top: 5px;

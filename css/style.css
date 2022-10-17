@@ -245,8 +245,8 @@
     padding-bottom: 30px;
 }
 
-
-.city-search .text, .food-search .text{
+.city-search .text, 
+.food-search .text{
     position: absolute;
     top: 70%;
     left: 50%;
@@ -256,12 +256,12 @@
     align-items: center;
 }
 
-
 .search-picture .txt{
     font-weight: 400;
     text-shadow: 2px 2px 5px rgb(191, 147, 76);
     letter-spacing: 2px;
 }
+
 .search-picture .material-symbols-outlined {
     font-size: 50px;
     font-variation-settings:
@@ -821,7 +821,13 @@
     margin-top: 70px;
 }
 
+/* 平板 RWD */
 @media screen and (max-width:1200px) {
+    /* 搜尋美食 */
+    .search-picture .txt{
+        font-size: 30px;
+    }
+
     .recom-title .ct-title,
     .blog-title .ct-title {
         padding-bottom: 0;
@@ -844,7 +850,15 @@
 }
 @media screen and (max-width:960px) {
 }
+
+/* 手機 RWD */
 @media screen and (max-width:768px) {
+    /* 搜尋美食 */
+    .search-picture .txt{
+        font-size: 25px;
+    }
+
+    /* 本日推薦 and 食客論壇 */
     .recom-pics,
     .blog-posts {
         width: 100%;

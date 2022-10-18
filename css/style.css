@@ -184,20 +184,27 @@
 }
 
 .go-search{
-    width: 15px;
+    width: 40px;
     height: 35px;
+    border: 0;
     border-radius: 50%;
     background-color:rgba(68, 81, 75, 1) ;
     margin:0 15px;
-    /* position: relative; */
+    position: relative;
+    cursor: pointer;
+}
+
+.go-search:hover{
+    background-color:rgb(113, 134, 124) ;
 }
 
 .go-search span{
     color: #fff;
-    /* position: absolute; */
-    transform: translate(-10%,30%);
+    position: absolute;
+    transform: translate(-40%,-35%);
     top: 50%;
     left: 50%;
+    font-size: 30px;
 }
 
 .dropdown {
@@ -239,7 +246,7 @@
 }
 
 .search-picture .txt, 
-.search-picture .material-symbols-outlined {
+.search-picture .go-icon span {
     color: rgb(255, 255, 255);
     font-size: 35px;
     padding-bottom: 30px;
@@ -262,16 +269,19 @@
     letter-spacing: 2px;
 }
 
-.search-picture .material-symbols-outlined {
-    font-size: 50px;
+.search-picture .go-icon-show span{
+    font-size: 60px;
+    color: #fff;
     font-variation-settings:
     'FILL' 0,
     'wght' 300
 }
 
-.search-pic-text:hover .material-symbols-outlined{
+.search-pic-text:hover .go-icon-show span{
+    color: #fff;
     font-variation-settings:
-    'FILL' 1
+    'FILL' 1;
+
 }
 
 .search-pic-text:hover img{
@@ -536,7 +546,7 @@
     left:-20%;
 }
 
-.festured-rests{
+.featured-rests{
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -807,7 +817,6 @@
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-
 }
 
 .blog-card .writer-name{
@@ -823,11 +832,52 @@
 
 /* 平板 RWD */
 @media screen and (max-width:1200px) {
-    /* 搜尋美食 */
+    /* 搜尋美食 and 精選特輯*/
+    .search-title .ct-title,
+    .featured-title .ct-title{
+        padding-bottom: 0;
+        position: relative;
+        margin-left: 5%;  
+        left: 0; 
+    }
+
+    .featured-title{
+        height: 100px;
+    }
+
+    .search-title .eg-title,
+    .featured-title .eg-title{
+        transform: rotate(0);
+        position: relative;
+        bottom: 0;
+        left: 0;
+        top:0;
+        margin-left: 5%;
+    }
+
+    /* 搜尋 bar */
+    .search-bar{
+        width: 90%;
+        height: 150px;
+        margin-top: 3%
+    }
+
+    .featured-rests{
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .featured-card {
+        width: calc(95% / 3);
+        margin-left: 0;
+    }
+
     .search-picture .txt{
         font-size: 30px;
     }
 
+     /* 本日推薦 and 食客論壇 */
     .recom-title .ct-title,
     .blog-title .ct-title {
         padding-bottom: 0;
@@ -842,11 +892,23 @@
         right: 0%;
         top: 0%;
         margin-right: 5%;
+        font-size: 50px;
     }
     .recom-pics,
     .blog-posts {
         margin: auto;
     }
+
+    /* 文字大小 */
+    .search-title .eg-title,
+    .featured-title .eg-title,
+    .recom-title .eg-title,
+    .blog-title .eg-title {
+        font-size: 50px;
+    }
+
+
+
 }
 @media screen and (max-width:960px) {
 }
@@ -860,19 +922,30 @@
 
     /* 本日推薦 and 食客論壇 */
     .recom-pics,
-    .blog-posts {
+    .blog-posts,
+    .featured-rests{
         width: 100%;
         flex-wrap: wrap;
     }
+
     .recom-pics .recom-card,
-    .blog-card {
+    .blog-card,
+    .featured-card {
         width: 90%;
         margin: 15px auto;
     }
-    .recom-title .eg-title {
-        font-size: 30px;
+
+    /* 文字大小 */
+    .search-title .eg-title,
+    .recom-title .eg-title,
+    .featured-title .eg-title,
+    .blog-title .eg-title{
+        font-size: 35px;
     }
-    .blog-card .pic {
+
+    .blog-card .pic,
+    .recom-card .pic,
+    .featured-card .pic  {
         height: 50vw;
     }
 }

@@ -134,6 +134,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 1px 1px 5px var(--small-text-color);
+    position: relative;
 }
 
 .card .pic{

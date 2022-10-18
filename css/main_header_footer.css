@@ -14,13 +14,13 @@
     display: flex;
     justify-content:flex-start;
     margin: auto;
-    padding: 10px 0;
 }
 
 .logo{
     width: 130px;
     height: 40px;
-    margin-top: 13px;;
+    margin-top: 23px;
+    
 }
 
 .logo img {
@@ -39,6 +39,7 @@
 .login{
     display: block;
     padding: 10px;
+    margin: 10px 0;
     font-weight: 500;
     font-size: 22px;
     list-style: none;
@@ -53,6 +54,7 @@
     top: 100%;
     background: rgba(255, 249, 241, 0.57);
     width: 110px;
+    border-radius: 0 0 5px 5px;
 }
 
 .main-nav ul li {
@@ -96,7 +98,7 @@
 
 @media screen and (max-width:767px) {
     .nav-bar{
-        margin: 10px;
+        margin: 0 10px;
     }
 
     .logo{
@@ -109,6 +111,7 @@
     }
 
     .hb{
+        padding: 10px;
         width: 40px;
         height: 40px;
         display: flex;
@@ -204,12 +207,14 @@
 
 
 @media screen and (min-width:768px) {
+    .nav-bar{
+        margin: 0 5%;
+    }
     .hb{display: none;}
     .main-nav,
     .login{
         display: flex;
         width: fit-content;
-        margin-top: 5px;
         margin-left: 20px;
     }            
 }

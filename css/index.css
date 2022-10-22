@@ -1,6 +1,3 @@
-
-
-
 /*banner*/
 
 .restaurant-transition{
@@ -122,10 +119,6 @@
 }
 
 .search-title .ct-title{
-    /* font-family:'Noto Sans TC', sans-serif; */
-    font-size: 28px;
-    color:rgba(68, 81, 75, 1) ;
-    font-weight: 500;
     padding-bottom: 90px;
 }
 
@@ -366,9 +359,6 @@
 }
 
 .recom-title .ct-title{
-    font-size: var(--h2-fs);
-    color:var(--main-text);
-    font-weight: 500;
     padding-bottom: 90px;
     position: absolute;
     right: 10%;
@@ -389,6 +379,7 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
+
 }
 
 .recom-pics .recom-card{
@@ -527,12 +518,7 @@
     position: relative;
 }
 
-
 .featured-title .ct-title{
-    font-size: var(--h2-fs);
-    color:rgba(68, 81, 75, 1) ;
-    font-weight: 500;
-
     position: absolute;
     left: 7%;
 }
@@ -683,9 +669,6 @@
 }
 
 .blog-title .ct-title{
-    font-size: var(--h2-fs);
-    color:var(--main-text);
-    font-weight: 500;
     position: absolute;
     right: 10%;
 }
@@ -944,7 +927,7 @@
     }
 
     .blog-card .pic,
-    .recom-card .pic,
+    .recom-pics .recom-card,
     .featured-card .pic  {
         height: 50vw;
     }

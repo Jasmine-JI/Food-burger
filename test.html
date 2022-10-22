@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- reset -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- 字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main_header_footer.css">
+
+    <style>
+    .recom-section{
+    width: 100%;
+    margin: 0 0 100px;
+    }
+    .recom-section.container{
+        width: 100%;
+    }
+
+.recom-title{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.recom-title .ct-title{
+    font-size: var(--h2-fs);
+    color:var(--main-text);
+    font-weight: 500;
+    padding-bottom: 90px;
+    position: absolute;
+    right: 10%;
+}
+
+.recom-title .eg-title{
+    font-family:var(--eg-font);
+    font-size: 72PX;
+    color: rgba(224, 198, 162, 0.512);
+    transform: rotate(90deg);
+
+    position: absolute;
+    right: -15%;
+    top: 200%;
+}
+
+.recom-pics{
+    width: 90%;
+    overflow: hidden;
+}
+
+.pics{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.recom-pics .recom-card{
+    width: calc(95% / 3);
+    height: 280px;
+    /* display: flex;
+    flex-direction: column; */
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+
+.recom-card .pic{
+    width: 100%;
+    height: 100%;
+}
+
+.recom-card .pic img{
+    width: 100%;
+    height: 100%;    
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(100%);
+    transition: filter .5s;
+}
+
+.star-score{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.345);
+    display: flex;
+    align-items:center;
+    padding: 5px;
+    border-radius: 0 0 0 8px;
+}
+
+.star-score .material-symbols-outlined{
+    color:var(--star-color);
+    font-variation-settings:'FILL' 1
+}
+
+.star-score .score{
+    font-weight:100;
+    font-size: 16px;
+    color: #fff;
+    margin:3px 8px 0;
+}
+
+.recom-card .go-icon span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.recom-card:hover .go-icon span{
+    opacity: 1;
+    font-variation-settings:
+    'FILL' 1;
+}
+
+.recom-card:hover img{
+    filter: brightness(70%);
+}
+
+.recom-card .rest-name{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: var(--h3-fs);
+    letter-spacing: 1px;
+
+}
+.recom-arrow{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 0px;
+}
+
+.recom-arrow .number-bar{
+    width: 10%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+    font-weight: 100;
+    color: var(--main-text);
+    font-size: 14px;
+}
+
+.recom-arrow .number-bar .material-symbols-outlined{
+    padding: 5px 30px 0px;
+}
+
+
+.recom-arrow .arrow{
+    display: flex;
+    margin-top: 10px;
+}
+
+.recom-arrow .arrow span{
+    font-variation-settings:'wght'300;
+    font-size: 50px;
+    color:var(--main-text);
+}
+
+.recom-arrow .arrow span:hover{
+    font-variation-settings: 'FILL' 1
+} 
+    </style>
+</head>
+<body>
+    <section class="recom-section">
+        <div class="container">
+            <h2 class="recom-title">
+                <span class="ct-title">本日推薦</span>
+                <sapn class="eg-title" lang="en" >Recommended</sapn>
+            </h2>
+            <div class="recom-pics">
+                <div class="pics">
+                    <a href="restaurant_info.html" class="recom-card">
+                        <div class="pic">
+                            <img src="homepage_pic/recom1.jpg" alt="Luxuriant 手作甜點店">
+                        </div>
+                        <div class="star-score">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="score">5.0</span>
+                        </div>
+                        <div class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </div>
+                        <h3 class="rest-name">Luxuriant 手作甜點店</h3>
+                    </a>
+                    <a href="restaurant_info.html" class="recom-card">
+                        <div class="pic">
+                            <img src="homepage_pic/recom2.jpg" alt="飛花落院美食料理餐廳">
+                        </div>
+                        <div class="star-score">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="score">4.8</span>
+                        </div>
+                        <div class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </div>
+                        <h3 class="rest-name">飛花落院美食料理餐廳</h3>
+                    </a>
+                    <a href="restaurant_info.html" class="recom-card">
+                        <div class="pic">
+                            <img src="homepage_pic/recom3.jpg" alt="好客燒烤 桃園中壢店">
+                        </div>
+                        <div class="star-score">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="score">4.9</span>
+                        </div>
+                        <div class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </div>
+                        <h3 class="rest-name">好客燒烤 桃園中壢店</h3>
+                    </a>
+                    <a href="restaurant_info.html" class="recom-card">
+                        <div class="pic">
+                            <img src="homepage_pic/recom3.jpg" alt="好客燒烤 桃園中壢店">
+                        </div>
+                        <div class="star-score">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="score">4.9</span>
+                        </div>
+                        <div class="go-icon">
+                            <span class="material-symbols-outlined">arrow_circle_right</span>
+                        </div>
+                        <h3 class="rest-name">好客燒烤 桃園中壢店</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="recom-arrow">
+                <div class="number-bar">
+                    <span>1</span>
+                    <span class="material-symbols-outlined">maximize</span>
+                    <span>6</span>
+                </div>
+                <div class="arrow">
+                    <a href="#"><span class="material-symbols-outlined">arrow_circle_left</span></a>
+                    <a href="#"><span class="material-symbols-outlined">arrow_circle_right</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

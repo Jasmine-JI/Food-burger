@@ -898,6 +898,39 @@
 
 /* 手機 RWD */
 @media screen and (max-width:768px) {
+    /* banner */
+
+    .restaurant-transition {
+        height: 500px;
+    }
+    
+    .restaurant-arrow .restaurant-place {
+        height: 30%;
+        margin-bottom: auto;
+    }
+
+    .restaurant-food{
+        width: 100vw;
+        height: 100%;
+    }
+
+    .restaurant-food img{
+        border-radius: 0 300px 0 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .restaurant-food .place-name{
+        left: 10px;
+        bottom: 20px;
+    }
+
+    .restaurant-arrow .number-bar {
+        display: none;
+    }
+
+
     /* 搜尋美食 */
     .search-picture .txt{
         font-size: 25px;

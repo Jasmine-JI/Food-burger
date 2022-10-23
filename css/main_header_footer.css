@@ -104,30 +104,38 @@
     }
 
     .logo{
+        width: 130px;
         margin: auto;
-        order: 1;
+        padding-top: 10px
     }
 
     .login{
-        order: 2;
+        order: 1;
     }
 
+    .login span{
+        padding: 10px 0 0;
+        color: #d68a6c;
+    }
+    
     .hb{
-        padding: 10px;
+        /* padding: 10px 10px 0; */
         width: 40px;
         height: 40px;
         display: flex;
         flex-direction: column;
+        transform: translateY(30%);
         justify-content: space-evenly;
         align-items:flex-start;
         position: relative;
         cursor: pointer;
+        order: -1;
     }
 
     .hb span{
         width: 32px;
         height: 2px;
-        background-color: var(--main-text);
+        background-color: #d68a6c;
         transition:all 0.2s ease-in-out;
     }
 
@@ -217,7 +225,6 @@
     }
 
     .hb{display: none;}
-
     .main-nav,
     .login{
         display: flex;

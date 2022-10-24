@@ -108,7 +108,6 @@ body{
 /* 搜尋種類篩選 filter */
 .filter {
     width: 88%;
-    min-height: 640px;
     margin: 0 auto;
     box-sizing: border-box;
     padding-bottom: 80px
@@ -511,3 +510,100 @@ input[type=text]:focus {
     font-weight: 300
 }
 
+
+/* 搜尋結果 */
+.restaurant{
+    max-width: 900px;
+    margin: auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cards .card{
+    width: 30%;
+    margin-bottom:40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--small-text-color);
+    position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .restaurant{
+        max-width: 700px;
+    }
+
+    .cards .card{
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .restaurant{
+        max-width: 500px;
+    }
+
+    .cards .card{
+        height: 50wh;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+
+}
+
+
+.card .pic{
+    width: 100%;
+    height: 240px;
+}
+
+.card .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 10px 10px 0 0;
+}
+
+.card .text{
+    font-size: var(--h3-fs);
+    color: var(--main-text);
+    padding: 15px 10px;
+}
+
+.card .rest-name{
+    margin-bottom: 10px;
+}
+
+.card .rest-adress{
+    font-size: var(--text-fs);
+    color:#888;
+}
+
+
+.type-restaurant .number-bar{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.type-restaurant .number-bar a{
+    text-decoration: none;
+    font-family: var(--ct-font);
+    font-size: var(--number-bar-fs);
+    color: var(--small-text-color);
+    padding: 10px;
+}
+
+.type-restaurant .number-bar a:hover{
+    color: var(--bnt-color);
+}

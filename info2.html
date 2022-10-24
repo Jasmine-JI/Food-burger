@@ -8,6 +8,10 @@
     <!-- reset -->
     <link rel="stylesheet" href="css/reset.css">
 
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
     <!-- 字型 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -19,9 +23,11 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main_header_footer.css">
-    <link rel="stylesheet" href="css/restaurant_info.css">
+    <link rel="stylesheet" href="css/info2.css">
 </head>
-<body>    
+<body>
+    
+    <div id="lightBox"></div>
     <!-- =========main header ===========-->
     <input type="checkbox" id="menu-switch">
     <header class="main-header">
@@ -43,8 +49,8 @@
                 <li class="nav-search">
                     <a class="tit">搜尋美食</a>
                     <ul>
-                        <li><a href="search_restaurant.htm">熱門城市</a></li>
-                        <li><a href="search_restaurant.htm">熱門種類</a></li>
+                        <li><a href="#">熱門城市</a></li>
+                        <li><a href="#">熱門種類</a></li>
                     </ul>
                 </li>
                 <li>
@@ -62,7 +68,6 @@
             </div>
         </div>
     </header>
-
 
     <!--===========reataurant-info============ -->
     <section class="restaurant-info-section">
@@ -94,6 +99,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="rest-info">
                     <div class="name-save">
                         <h1 class="rest-name">飛花飛落景觀餐廳</h1>
@@ -124,23 +130,102 @@
                             <a href="#" class="text link">ubereats.com</a>
                         </div>
                     </address>
+                    
                     <div class="score">
-                        <div class="title">
-                            <h2>評分與評價</h2>
+                        <div id="goScore">我要評分</div>
+                        <!-- 我要評分 -->
+                        
+                        <div class="give-star">
+                            <div class="post">
+                                <div class="text">已送出評論</div>
+                                <div class="edit">x</div>
+                            </div>
+                            <div class="star-widget">
+                                <input type="radio" name="rate" id="rate-5">
+                                <label for="rate-5" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-4">
+                                <label for="rate-4" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-3">
+                                <label for="rate-3" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-2">
+                                <label for="rate-2" class="fas fa-star"></label>
+                                <input type="radio" name="rate" id="rate-1">
+                                <label for="rate-1" class="fas fa-star"></label>
+                                <form action="#">
+                                <header></header>
+                                <div class="textarea">
+                                    <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                                </div>
+                                <div class="btn">
+                                    <button type="submit" id="starSub">評論</button>
+                                </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <!-- <div class="give-star">
-                        <a href="#" class="title go-star">去評分></a>
-                    </div> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="scores"></section>
-        <div class="title">
-            <h2>評分與評價</h2>
+    <section class="scores">
+        <div class="container">
+            <h2 class="title">各平台評分與評價</h2>
         </div>
+        <div class="plats">
+            <div class="wrapper">
+                <div class="card">
+                    <div class="circular-progress circular-progress1">
+                        <span class="progress-value progress-value1">0</span>
+                    </div>
+                    <img src="/homepage_pic/logo.png" alt="Food Burger">
+                    <!-- <span class="text">Food Burger</span> -->
+                </div>
+                <div class="card">
+                    <div class="circular-progress circular-progress2">
+                        <span class="progress-value progress-value2">0</span>
+                    </div>
+                    <img src="/pic/Foodpanda-Logo.png" alt="Foodpanda">
+                    <!-- <span class="text">Foodpanda</span> -->
+                </div>
+                <div class="card">
+                    <div class="circular-progress circular-progress3">
+                        <span class="progress-value progress-value3">0</span>
+                    </div>
+                    <img src="/pic/Uber-Eats-logo.png" alt="Uber Eats">
+                    <!-- <span class="text">Uber Eats</span> -->
+                </div>
+                <div class="card">
+                    <div class="circular-progress circular-progress4">
+                        <span class="progress-value progress-value4">0</span>
+                    </div>
+                    <img src="/pic/google-icon.png" alt="Uber Eats">
+                    <!-- <span class="text">Google</span> -->
+                </div>
+                <!-- JavaScript -->
+                <script src="js/main.js"></script>
+            </div>
+        </div>
+    </section>
+        <!-- <script>
+        let options = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.85,
+            fill: {gradient: ['#E76F51', '#E9C46A']}
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function(event, progress, stepValue){
+            $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+        $(".js .bar").circleProgress({
+            value: 0.70
+        });
+        $(".react .bar").circleProgress({
+            value: 0.60
+        });
+        </script> -->
+
 
     <!-- =============相關文章=========== -->
     <section class="relative-posts">
@@ -198,8 +283,8 @@
             </div>
         </div>
     </section>
-     <!--========== footer ===========-->
-     <footer class="main-footer">
+    <!--========== footer ===========-->
+    <footer class="main-footer">
         <div class="container">
             <div class="footer-group">
                 <div class="footer-item">
@@ -258,5 +343,33 @@
             &copy;Food burger
         </div>
     </footer>
+    
+    <script>
+        var giveStar = document.querySelector('.give-star');
+        var goScore = document.getElementById('goScore');
+        var starSub = document.getElementById('starSub');
+        var post = document.querySelector(".post");
+        var widget = document.querySelector(".star-widget");
+        var editBtn = document.querySelector(".edit");
+        var lightBox = document.getElementById("lightBox");
+
+            
+        goScore.onclick = ()=>{
+        lightBox.style.display = "block";
+        giveStar.style.display = "block";
+        widget.style.display = "block"
+        }
+
+        starSub.onclick = ()=>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = ()=>{
+            giveStar.style.display = "none";
+            post.style.display = "none";
+            lightBox.style.display = "none";
+            }
+        return false;
+        }
+    </script>
 </body>
 </html>

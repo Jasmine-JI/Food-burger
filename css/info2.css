@@ -1,0 +1,540 @@
+/* ======header====== */
+.main-nav>li:nth-child(1){
+    border-bottom: 5px solid var(--intro-color);
+
+}
+
+/* ====餐廳資訊====== */
+.restaurant-info-section{
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.bread{
+    display: flex;
+    font-family: var(--ct-font);
+    font-weight: 100;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    
+}
+
+.bread a,
+.bread span{
+    text-decoration: none;
+    font-family: var(--ct-font);
+    font-weight: 100;
+    color: var(--text-color);
+    
+}
+
+
+.pics-info{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.pics-info .rest-pics{
+    width: 40%;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.rest-pics .main-img{
+    width: 100%;
+    
+}
+
+.rest-pics .main-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.rest-pics .select-pic{
+    display: flex;
+    width: 100%;
+}
+
+.select-pic .img{
+    width: calc(100%/4);
+    margin: 10px;
+    height: 100px;
+}
+
+.select-pic .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.rest-info{
+    width: 50%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction:column;
+
+
+}
+.rest-name{
+    font-family: var(--ct-font);
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 30px;
+
+}
+
+.rest-info .rest-name{
+    font-size: var(--text-color);
+    font-size: var(--h2-fs);
+}
+
+
+.rest-info .title{
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.name-save{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* justify-content: space-between; */
+}
+
+.name-save a{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--intro-color);
+    
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rest-detail{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.rest-detail .title,
+.rest-detail .text{
+    text-decoration: none;
+    font-family: var(--ct-font);
+    font-size: var(--h3-fs);
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.rest-detail .text{
+    font-size: var(--text-fs);
+    color: #666;  
+}
+
+.rest-detail .link:hover{
+    color: var(--intro-color);
+}
+.rest-detail .title{
+    margin-right: 5px;
+}
+
+
+/* =====各平台評分評價===== */
+.scores{
+    margin-top:50px ;
+    background-color: rgb(255, 245, 245);
+}
+
+.scores .title{
+    font-family:'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    color:rgba(68, 81, 75, 1) ;
+    font-weight: 500;
+    padding: 20px 10px;
+}
+
+.plats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+.plats .wrapper{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plats .card{
+    /* background: #fff; */
+    width: calc(25% - 20px);
+    height: 300px;
+    /* border-radius: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
+}
+.circular-progress{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#ffd558 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #e8702a;
+}
+.plats img{
+    width: 200px;
+}
+
+@media(max-width: 768px){
+  .wrapper{
+    max-width: 700px;
+  }
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 500px){
+  .wrapper{
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
+}
+
+.score{
+    font-family: var(--ct-font);
+    font-weight: 400;
+    font-size: var(--h3-fs);
+    color: var(--text-color);
+}
+
+/* =======相關文章========= */
+.relative-posts{
+    margin-top: 100px;
+}
+
+.relative-posts h2{
+    font-family:'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    color:rgba(68, 81, 75, 1) ;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.blog-posts{
+    width: 100%;
+    display: flex;
+}
+
+.blog-card{
+    width:calc(80%/3);
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    text-decoration: none;
+
+    /* align-items: center; */
+}
+
+.blog-card .post-date{
+    padding:0 5px 5px;
+    font-family: var(--ct-font);
+    color: var(--intro-color);
+    font-size: 15px;
+
+}
+.blog-card .pic{
+    width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.blog-card .pic img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    border-radius: 20px;
+    vertical-align: middle;
+    object-fit: cover;
+
+    transition: filter .3s;
+}
+
+.blog-card:hover .pic img{
+    filter: brightness(70%);
+}
+
+
+.blog-card .go-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.blog-card .go-icon span{
+    font-size: 50px;
+    color: #fff;
+
+    font-variation-settings:
+    'wght' 200;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.blog-card:hover .go-icon span{
+    opacity: 1;
+    font-variation-settings:
+    'FILL' 1;
+}
+
+.blog-card .post-title{
+    padding: 10px 0;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-family: var(--ct-font);
+    font-weight: 300;
+    color: var(--main-text);
+}
+
+.blog-card .writer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.blog-card .writer-pic{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.blog-card .writer-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+.blog-card .writer-name{
+    font-size: 12px;
+    font-family: var(--eg-font);
+    color: var(--intro-color);
+    font-weight: 100;
+}
+
+.main-footer{
+  margin-top: 50px;  
+}
+
+
+
+/* 我要評分 */
+#goScore{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding-top:10px ;
+    border:1px solid #fff;
+    border-radius: 10px ;
+    background-color: rgb(255, 220, 171);
+}
+
+#goScore:hover{
+    background-color: rgb(255, 220, 171);
+}
+
+#lightBox{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(66, 66, 66, 0.404);
+    display: none;
+    margin-top: -100px; ;
+    z-index: 1;
+  }
+
+.give-star{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+
+    /* width: 400px; */
+    background-color: rgb(255, 229, 193);
+    /* backdrop-filter: blur(2px); */
+    padding: 20px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.156);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    display: none;
+}
+
+.give-star .post{
+    display: none;
+}
+
+.give-star .text{
+    font-size: 20px;
+    color: #666;
+    font-weight: 400;
+}
+
+.give-star .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.give-star .edit:hover{
+    text-decoration: underline;
+}
+
+.give-star .star-widget input{
+    display: none;
+}
+
+.star-widget label{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.329);
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+color: #fd4;
+}
+  input:checked ~ label{
+    color: #fd4;
+  }
+  input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px rgb(255, 203, 129);
+  }
+  #rate-1:checked ~ form header:before{
+    content: "體驗不佳";
+  }
+  #rate-2:checked ~ form header:before{
+    content: "還有進步空間";
+  }
+  #rate-3:checked ~ form header:before{
+    content: "感覺還行";
+  }
+  #rate-4:checked ~ form header:before{
+    content: "喜歡";
+  }
+  #rate-5:checked ~ form header:before{
+    content: "超棒";
+  }
+  .give-star form{
+    display: none;
+  }
+  input:checked ~ form{
+    display: block;
+  }
+  form header{
+    width: 100%;
+    font-size: 18px;
+    color: rgb(99, 99, 100);
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+  form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: rgb(107, 107, 107);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.367);
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+  }
+  .textarea textarea:focus{
+    border-color: rgb(255, 201, 130);
+  }
+  form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.314);
+    border-radius: 10px;
+    outline: none;
+    background: rgb(249, 114, 114);
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form .btn button:hover{
+    background: #ff9d9d;
+  }

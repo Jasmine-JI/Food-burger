@@ -2,6 +2,7 @@
 .banner{
     height: 400px;
     background-image: url(/pic/101.jpg);
+    background-attachment:scroll;
     background-position: center;
     background-size: cover;
 

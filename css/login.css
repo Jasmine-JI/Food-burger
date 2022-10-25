@@ -197,7 +197,7 @@
 
 .forms .form-content .button input{
   color: #fff;
-  background: #ffceae;
+  background: #f8b88e;
   border-radius: 6px;
   padding: 0;
   cursor: pointer;
@@ -205,11 +205,11 @@
 }
 
 .forms .form-content .button input:hover{
-  background: #5b13b9;
+  background: #fcd0c5;
 }
 
 .forms .form-content label{
-  color: #f6a08b;
+  color: #ffa85c;
   cursor: pointer;
 }
 

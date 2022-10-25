@@ -487,15 +487,16 @@
     }
 
     .star3 {
-        flex-direction: column;
+        position: relative
     }
 
     .star3-1 .foodie-name {
-        transform: translate(-22%);
     }
 
     .star3-2{
-        margin-left: 45%;
+        position: absolute;
+        right: 0;
+        top: 95%;
     }
     
 }

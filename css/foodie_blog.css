@@ -4,6 +4,7 @@
 
 }
 
+
 /* ======banner====== */
 .blog-banner{
     width: 100%;
@@ -409,4 +410,92 @@
 
     font-size: var(--h3-fs);
     color: var(--intro-color);
+}
+
+
+/* 手機 RWD */
+@media screen and (max-width:768px) {
+    .blog-banner .pic {
+        height: 400px;
+    }
+
+    .foodie-blog .container{
+        max-width: 600px;
+    }
+
+    .blog-header .function {
+        width: 50%;
+    }
+
+    .foodie-blog .blog-header{
+        max-width: 600px;
+    }
+
+    .blog-header .hot-new{
+        width: 30%;
+    }
+
+    .blog-header .function{
+        width: 50%;
+    }
+
+    .blog-header .new-post .text{
+        display:none;
+    }
+
+    /* post-card */
+    .post-card {
+        flex-wrap: wrap;
+    }
+
+    .post-card .post-contain {
+        width: 100%;
+    }
+
+    .detail .like-comment {
+        width: 30%;
+    }
+
+    .post-card .pic {
+        width: 100%;
+    }
+
+    /* popular-writer */
+    .foodie-title .ct-title {
+        padding-bottom: 0;
+        position: relative;
+        right: 0%;
+        margin-right: 5%;
+        
+    }
+
+    .foodie-title .eg-title {
+        transform: rotate(0);
+        position: relative;
+        right: 0%;
+        top: 0%;
+        margin-right: 5%;
+        font-size: 50px;
+    }
+
+    .foodie-title .eg-title {
+    font-size: 35px;
+    }
+
+    .star2 {
+        justify-content: flex-end;
+    }
+
+    .star3 {
+        flex-direction: column;
+    }
+
+    .star3-1 .foodie-name {
+        transform: translate(-22%);
+    }
+
+    .star3-2{
+        margin-left: 45%;
+    }
+    
 }

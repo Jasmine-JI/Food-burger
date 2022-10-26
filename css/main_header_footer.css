@@ -5,7 +5,7 @@
     top: 0;
     z-index: 2;
 
-    background-color:rgba(255, 255, 255, 0.145);
+    background-color:rgba(255, 255, 255, 0.497);
     border: 1px solid rgba(255, 255, 255, 0.125);
     backdrop-filter:blur(2px);   
 }
@@ -57,7 +57,7 @@
     position: absolute;
     display: none;
     top: 100%;
-    background: rgba(255, 255, 255, 0.121);
+    background: rgba(255, 255, 255, 0.497);
     width: 110px;
     border-radius: 0 0 5px 5px;
 }
@@ -164,10 +164,10 @@
         /* text-align: center; */
         position: absolute;
 
-        background-color: rgb(255, 255, 255);
-        width: 45%;
+        background-color: rgb(255, 254, 246);
+        width: 100vw;
         height: 100vh;
-        left: -100%;
+        left: -200%;
         top: 100%;
         opacity: 0;
         transition: opacity 1s 0s,

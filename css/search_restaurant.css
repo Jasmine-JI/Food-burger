@@ -1,7 +1,7 @@
 /* search-restaurant banner */
 .banner{
     height: 400px;
-    background-image: url(./pic/101.jpg);
+    background-image: url(../pic/101.jpg);
     background-attachment:scroll;
     background-position: center;
     background-size: cover;
@@ -58,7 +58,7 @@ body{
     display: inline-block;
     width: 28px;
     height: 28px;
-    background-image:url(/pic/location-white-icon.svg);
+    background-image:url(../pic/location-white-icon.svg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: 50%;
@@ -82,7 +82,7 @@ body{
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(/pic/down-white-arrow.svg);
+    background-image: url(../pic/down-white-arrow.svg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: 50%;
@@ -318,7 +318,7 @@ body{
     object-fit: contain;
     transition-duration: .3s;
     cursor: pointer;
-    background-image: url(/pic/search-icon.svg);
+    background-image: url(../pic/search-icon.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
@@ -417,7 +417,7 @@ body{
     position: absolute;
     right: 80px;
     top: 50%;
-    background-image: url(/pic/button_clear.png);
+    background-image: url(../pic/button_clear.png);
     background-size: 18px auto;
     background-repeat: no-repeat;
     background-position: 0

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <!-- reset -->
+         <!-- <link rel="stylesheet" href="css/reset.css"> -->
+
+         <!-- 字型 -->
+         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@1,700&display=swap" rel="stylesheet">
+     
+         <!-- icon -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     
+         <!-- Swiper Css -->
+         <link rel="stylesheet" href="css/swiper-bundle.min.css">
+     
+         <!-- css -->
+
+         <style>
+         
+         body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+         .slide-container{
+            max-width: 1120px;
+            width: 100%;
+            padding: 40px 0;
+          }
+          .slide-content{
+            margin: 0 40px;
+            overflow: hidden;
+            border-radius: 25px;
+          }
+          .card{
+            border-radius: 25px;
+            background-color: #FFF;
+          }
+          .image-content,
+          .card-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 14px;
+          }
+          .image-content{
+            position: relative;
+            row-gap: 5px;
+            padding: 25px 0;
+          }
+          .overlay{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #4070F4;
+            border-radius: 25px 25px 0 25px;
+          }
+          .overlay::before,
+          .overlay::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            height: 40px;
+            width: 40px;
+            background-color: #4070F4;
+          }
+          .overlay::after{
+            border-radius: 0 25px 0 0;
+            background-color: #FFF;
+          }
+          .card-image{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: #FFF;
+            padding: 3px;
+          }
+          .card-image .card-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #4070F4;
+          }
+          .name{
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+          }
+          .description{
+            font-size: 14px;
+            color: #707070;
+            text-align: center;
+          }
+          .button{
+            border: none;
+            font-size: 16px;
+            color: #FFF;
+            padding: 8px 16px;
+            background-color: #4070F4;
+            border-radius: 6px;
+            margin: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+          .button:hover{
+            background: #265DF2;
+          }
+          
+          .swiper-navBtn{
+            color: #6E93f7;
+            transition: color 0.3s ease;
+          }
+          .swiper-navBtn:hover{
+            color: #4070F4;
+          }
+          .swiper-navBtn::before,
+          .swiper-navBtn::after{
+            font-size: 35px;
+          }
+          .swiper-button-next{
+            right: 0;
+          }
+          .swiper-button-prev{
+            left: 0;
+          }
+          .swiper-pagination-bullet{
+            background-color: #6E93f7;
+            opacity: 1;
+          }
+          .swiper-pagination-bullet-active{
+            background-color: #4070F4;
+          }
+          
+          @media screen and (max-width: 768px) {
+            .slide-content{
+              margin: 0 10px;
+            }
+            .swiper-navBtn{
+              display: none;
+            }
+          }
+
+         </style>
+</head>
+<body>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <!--<img src="images/profile4.jpg" alt="" class="card-img">-->
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <!--<img src="images/profile5.jpg" alt="" class="card-img">-->
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <!--<img src="images/profile6.jpg" alt="" class="card-img">-->
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <!--<img src="images/profile7.jpg" alt="" class="card-img">-->
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <!--<img src="images/profile8.jpg" alt="" class="card-img">-->
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <!--<img src="images/profile9.jpg" alt="" class="card-img">-->
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+</body>
+
+<!-- Swiper JS -->
+  <!--Uncomment this line-->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+  <!--Uncomment this line-->
+<script src="js/main.js"></script>
+</body>
+</html>

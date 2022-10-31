@@ -8,11 +8,15 @@
 /* ======banner====== */
 .blog-banner{
     width: 100%;
+    height: 400px;
     margin: auto;
-    /* position: relative; */
+    background-image: url(../foodie_blog_pic/banner.jpg);
+    background-position: center;
+    background-size: cover;
 
 }
-.blog-banner .pic{
+
+/* .blog-banner .pic{
     margin: auto;
     width: 100%;
     height: 650px;
@@ -25,7 +29,7 @@
     object-fit: cover;
     vertical-align: middle;
     object-position: top center;
-}
+} */
 .blog-banner .title{
     position: absolute;
     top: 35%;
@@ -319,23 +323,34 @@
     vertical-align: middle;
 }
 
-.blog-posts .number-bar{
+/* 頁數 */
+.number-bar {
     text-align: center;
     margin-top: 50px;
-
 }
-.blog-posts .number-bar a{
+
+.number-bar a{
     text-decoration: none;
     font-family: var(--ct-font);
     font-size: var(--number-bar-fs);
     color: var(--small-text-color);
-
     padding: 10px;
 }
 
-.blog-post .number-bar a:hover{
+.number-bar a:nth-child(2){
     color: var(--bnt-color);
 }
+
+.number-bar a i{
+    color: var(--small-text-color);
+}
+
+.number-bar a:hover,
+.number-bar a i:hover{
+    color: var(--bnt-color);
+}
+
+
 
 /* =============人氣作家=============== */
 .popular-foodie{
@@ -487,7 +502,8 @@
     }
 
     .star3 {
-        position: relative
+        position: relative;
+        margin-bottom: 75%;
     }
 
     .star3-1 .foodie-name {

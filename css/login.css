@@ -1,13 +1,11 @@
 .login-content{
-  position: relative;
-  top: 20vh;
+  position: relative; 
   max-width: 900px;
-  width: 100%;
   background: #fff;
   padding: 40px 30px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   perspective: 2700px;
-  margin: auto;
+  margin:20vh auto 0;
 }
 
 .login-content .cover{

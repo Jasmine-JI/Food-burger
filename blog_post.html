@@ -16,10 +16,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main_header_footer.css">
     <link rel="stylesheet" href="css/blog_post.css">
+
+
+
 </head>
 <body><!-- =========main header ===========-->
     <input type="checkbox" id="menu-switch">
@@ -63,8 +69,6 @@
     </header>
 
 
-    
-
     <!-- ===========論壇貼文============= -->
         <section class="blog-post">
             <div class="writer">
@@ -92,49 +96,54 @@
                             <span class="material-symbols-outlined icon">location_on</span>
                             <div class="rest-name">拾光早午餐</div>
                         </a>
-
                     </div>
                 </div>
                 
-                <div class="pictures">
-                    <a href="#" class="icon">
+                <div class="slide-container swiper">
+                    <!-- <button class="pre-btn btn">
                         <span class="material-symbols-outlined">
                             navigate_before
                             </span>
-                    </a>
-                    <div class="pics">
-                        <a href="#">
-                            <div class="pic">
+                    </button> -->
+                    <div class="pictures">
+                        <div class="pics swiper-wrapper">
+                            <div class="pic swiper-slide">
                                 <img src="foodie_blog_pic/food1.jpg" alt="拾光早午餐">
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="pic">
+                            <div class="pic swiper-slide">
                                 <img src="foodie_blog_pic/food2.jpg" alt="拾光早午餐">
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="pic">
+                            <div class="pic swiper-slide">
                                 <img src="foodie_blog_pic/food3.jpg" alt="拾光早午餐">
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="pic">
+                            <div class="pic swiper-slide">
                                 <img src="foodie_blog_pic/food4.jpg" alt="拾光早午餐">
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="pic">
+                            <div class="pic swiper-slide">
                                 <img src="foodie_blog_pic/food5.jpg" alt="拾光早午餐">
                             </div>
-                        </a>
+                            <div class="pic swiper-slide">
+                                <img src="foodie_blog_pic/food5.jpg" alt="拾光早午餐">
+                            </div>
+                            <div class="pic swiper-slide">
+                                <img src="foodie_blog_pic/food5.jpg" alt="拾光早午餐">
+                            </div>
+                            <div class="pic swiper-slide">
+                                <img src="foodie_blog_pic/food5.jpg" alt="拾光早午餐">
+                            </div>
+                            <div class="pic swiper-slide">
+                                <img src="foodie_blog_pic/food5.jpg" alt="拾光早午餐">
+                            </div>
+                            <div class="pic swiper-slide">
+                                <img src="foodie_blog_pic/food5.jpg" alt="拾光早午餐">
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="icon">
-                        <span class="material-symbols-outlined">
-                            navigate_next
-                        </span>
-                    </a>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
+
 
                 <div class="container">
                     <div class="content-text">
@@ -198,8 +207,6 @@
 
 
 
-
-
     <!--========== footer ===========-->
     <footer class="main-footer">
         <div class="container">
@@ -260,6 +267,11 @@
             &copy;Food burger
         </div>
     </footer>
+
+    <!-- Swiper Js -->
+    <script src="js/swiper-bundle.min.js"></script>
     
+    <!-- Initialize Swiper -->
+    <script src="js/main.js"></script>
 </body>
 </html>

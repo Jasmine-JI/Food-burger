@@ -7,7 +7,6 @@
     background-color: rgb(255, 249, 240);
 }   
 
-
 .restaurant-food{
     width: 60%;
     height: 100%;
@@ -36,15 +35,14 @@
     font-size: 20px;
     margin-right: 10px;
 }
+
 .restaurant-food .txt{
     /* font-family:'Noto Sans TC', sans-serif; */
     font-size: 18px;
     font-weight: 400;
     text-shadow: 1px 2px 2px rgba(255, 254, 251, 0.386);
     letter-spacing: 2px;
-
 }
-
 
 .restaurant-arrow{
     width: 35%;
@@ -57,7 +55,6 @@
 .restaurant-arrow .restaurant-place{
     width:100%;
     height: 70%;
-
 }
 
 .restaurant-place img{
@@ -75,9 +72,10 @@
     display: flex;
     justify-content:space-between;
     margin-bottom: -100px;
-
 }
-
+.number-bar .material-symbols-outlined {
+    padding: 5px 30px 0px;
+}
 
 .restaurant-arrow .arrow{
     display: flex;
@@ -115,7 +113,6 @@
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
-
 }
 
 .search-title .ct-title{
@@ -123,7 +120,6 @@
 }
 
 .search-title .eg-title{
-    /* font-family: 'Niramit', sans-serif; */
     font-size: 72PX;
     color: rgba(213, 173, 120, 0.28);
     transform: rotate(-90deg);
@@ -136,7 +132,6 @@
     width: 80%;
     height: 200px;
     margin: auto;
-    /* background-color: rgb(255, 249, 240); */
     display: flex;
     justify-content: center;
     align-items:flex-start;
@@ -173,7 +168,6 @@
     width: calc((100%-50px)/2);
     display: flex;
     justify-content: space-between;
-    /* margin: 0 5px; */
 }
 
 .go-search{
@@ -209,7 +203,14 @@
     outline: 0;
     width: 100%;
     background: none;
+    color: #999;
+    padding: 0 30px;
+    font-weight: 300;
+    font-size: 20px;
+}
 
+.dropdown >select option {
+    color: #666;
 }
 
 /* ======search-picture======== */
@@ -496,6 +497,7 @@
     font-variation-settings:'wght'300;
     font-size: 50px;
     color:var(--main-text);
+    margin-left: 20px;
 }
 
 .recom-arrow .arrow span:hover{
@@ -596,9 +598,10 @@
 }
 
 .featured-arrow{
-    width: 100%;
+    width: 92%;
     display: flex;
     justify-content: space-between;
+    margin-left: auto;
     align-items:center;
     padding: 10px 0px;
 
@@ -609,7 +612,6 @@
     padding-top: 10px;
 
     display: flex;
-    margin-left: 8%;
 
 }
 .featured-arrow .number-bar .material-symbols-outlined{
@@ -810,7 +812,11 @@
 }
 
 .blog-section .more{
-    margin-top: 70px;
+    width: 90%;
+    justify-content: flex-end;
+    margin: 0;
+    margin-right: auto;
+    padding-top: 30px;
 }
 
 /* 平板 RWD */
@@ -890,6 +896,19 @@
         font-size: 50px;
     }
 
+    /* arrow */
+    .recom-arrow,
+    .featured-arrow{
+        margin: auto;
+    }
+
+    /* 看更多 */
+    .blog-section .more,
+    .featured-section .more{
+        width: 95%;
+        justify-content: flex-end;
+        margin: 0;
+    }
 
 
 }

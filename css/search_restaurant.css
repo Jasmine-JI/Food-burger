@@ -2,7 +2,7 @@
 .banner{
     height: 400px;
     background-image: url(../pic/101.jpg);
-    background-attachment:scroll;
+    /* background-attachment:scroll; */
     background-position: center;
     background-size: cover;
 
@@ -12,8 +12,6 @@
         height: 300px;
     }
 }
-
-
 
 /*======== .search-city ========*/
 body{
@@ -105,7 +103,6 @@ body{
     vertical-align: middle
 }
 
-
 /* 搜尋種類篩選 filter */
 .filter {
     width: 88%;
@@ -131,9 +128,7 @@ body{
     }
 }
 
-
 /* 搜尋美食種類 */
-
 .filter .search-type {
     margin: 0 auto;
     text-align: center;
@@ -431,7 +426,6 @@ body{
     }
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -590,6 +584,29 @@ input[type=text]:focus {
     color:#888;
 }
 
+/* 餐廳星數 */
+.star-score{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(122, 120, 120, 0.342);
+    display: flex;
+    align-items:center;
+    padding: 5px;
+    border-radius: 0 8px 0 8px;
+}
+
+.star-score .material-symbols-outlined{
+    color:var(--star-color);
+    font-variation-settings:'FILL' 1
+}
+
+.star-score .score{
+    font-weight:100;
+    font-size: 16px;
+    color: #fff;
+    margin:3px 8px 0;
+}
 
 .type-restaurant .number-bar{
     text-align: center;
@@ -608,3 +625,31 @@ input[type=text]:focus {
 .type-restaurant .number-bar a:hover{
     color: var(--bnt-color);
 }
+
+/* 頁數 */
+.number-bar {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.number-bar a{
+    text-decoration: none;
+    font-family: var(--ct-font);
+    font-size: var(--number-bar-fs);
+    color: var(--small-text-color);
+    padding: 10px;
+}
+
+.number-bar a:nth-child(2){
+    color: var(--bnt-color);
+}
+
+.number-bar a i{
+    color: var(--small-text-color);
+}
+
+.number-bar a:hover,
+.number-bar a i:hover{
+    color: var(--bnt-color);
+}
+

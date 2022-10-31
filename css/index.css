@@ -203,14 +203,14 @@
     outline: 0;
     width: 100%;
     background: none;
-    color: #999;
+    color: #666;
     padding: 0 30px;
     font-weight: 300;
     font-size: 20px;
 }
 
-.dropdown >select option {
-    color: #666;
+.dropdown select >option {
+    color: #999;
 }
 
 /* ======search-picture======== */

@@ -163,6 +163,7 @@
                                     <button type="submit" id="starSub">評論</button>
                                 </div>
                                 </form>
+                                <div class="edit edit2">x</div>
                             </div>
                         </div>
                     </div>
@@ -354,25 +355,30 @@
         var post = document.querySelector(".post");
         var widget = document.querySelector(".star-widget");
         var editBtn = document.querySelector(".edit");
+        var editBtn2 = document.querySelector(".edit2");
         var lightBox = document.getElementById("lightBox");
-
-            
+  
         goScore.onclick = ()=>{
-        lightBox.style.display = "block";
-        giveStar.style.display = "block";
-        widget.style.display = "block"
+            giveStar.style.display = "block";
+            widget.style.display = "block";
+            lightBox.style.display = "block";
         }
 
         starSub.onclick = ()=>{
-        widget.style.display = "none";
-        post.style.display = "block";
-        editBtn.onclick = ()=>{
+            widget.style.display = "none";
+            post.style.display = "block";
+            editBtn.onclick = ()=>{
             giveStar.style.display = "none";
+            widget.style.display = "none";
             post.style.display = "none";
             lightBox.style.display = "none";
             }
-        return false;
         }
+        editBtn2.onclick = ()=>{
+            giveStar.style.display = "none";
+            lightBox.style.display = "none";
+        }
+
     </script>
 </body>
 </html>

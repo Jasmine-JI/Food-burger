@@ -417,10 +417,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 10;
-
-    /* width: 400px; */
     background-color: rgb(255, 229, 193);
-    /* backdrop-filter: blur(2px); */
     padding: 20px 30px;
     border: 1px solid rgba(255, 255, 255, 0.156);
     border-radius: 30px;
@@ -428,7 +425,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     display: none;
 }
 
@@ -470,37 +466,46 @@
 
 input:not(:checked) ~ label:hover,
 input:not(:checked) ~ label:hover ~ label{
-color: #fd4;
-}
-  input:checked ~ label{
     color: #fd4;
-  }
-  input#rate-5:checked ~ label{
+}
+
+input:checked ~ label{
+    color: #fd4;
+}
+
+input#rate-5:checked ~ label{
     color: #fe7;
     text-shadow: 0 0 20px rgb(255, 203, 129);
-  }
-  #rate-1:checked ~ form header:before{
+}
+
+#rate-1:checked ~ form header:before{
     content: "體驗不佳";
-  }
-  #rate-2:checked ~ form header:before{
+}
+
+#rate-2:checked ~ form header:before{
     content: "還有進步空間";
-  }
-  #rate-3:checked ~ form header:before{
+}
+
+#rate-3:checked ~ form header:before{
     content: "感覺還行";
-  }
-  #rate-4:checked ~ form header:before{
+}
+
+#rate-4:checked ~ form header:before{
     content: "喜歡";
-  }
-  #rate-5:checked ~ form header:before{
+}
+
+#rate-5:checked ~ form header:before{
     content: "超棒";
-  }
-  .give-star form{
+}
+
+.give-star form{
     display: none;
-  }
-  input:checked ~ form{
+}
+input:checked ~ form{
     display: block;
-  }
-  form header{
+}
+
+form header{
     width: 100%;
     font-size: 18px;
     color: rgb(99, 99, 100);
@@ -508,13 +513,15 @@ color: #fd4;
     margin: 5px 0 20px 0;
     text-align: center;
     transition: all 0.2s ease;
-  }
-  form .textarea{
+}
+
+form .textarea{
     height: 100px;
     width: 100%;
     overflow: hidden;
-  }
-  form .textarea textarea{
+}
+
+form .textarea textarea{
     height: 100%;
     width: 100%;
     outline: none;
@@ -524,16 +531,19 @@ color: #fd4;
     padding: 10px;
     font-size: 17px;
     resize: none;
-  }
-  .textarea textarea:focus{
+}
+
+.textarea textarea:focus{
     border-color: rgb(255, 201, 130);
-  }
-  form .btn{
+}
+
+form .btn{
     height: 45px;
     width: 100%;
     margin: 15px 0;
-  }
-  form .btn button{
+}
+
+form .btn button{
     height: 100%;
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.314);
@@ -546,12 +556,13 @@ color: #fd4;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  form .btn button:hover{
-    background: #ff9d9d;
-  }
+}
 
-  @media screen and (max-width:768px) {
+form .btn button:hover{
+    background: #ff9d9d;
+}
+
+@media screen and (max-width:768px) {
     .bread {
         margin: 15px;
     }
@@ -568,7 +579,6 @@ color: #fd4;
         margin: auto;
     }
 
-    
     .rest-info {
         width: 100%;
         margin: auto;
@@ -584,6 +594,16 @@ color: #fd4;
 
     .score {
         margin: auto;
+        padding-top: 0;
+        margin-block: 20px;
+    }
+
+    .give-star {
+        width: 70%;
+    }
+
+    .star-widget label{
+        font-size: 28px;
     }
 
     /* relativ-posts */
@@ -605,5 +625,4 @@ color: #fd4;
     .relative-posts h2 {
         padding: 15px;
     }
-
-    }
+}

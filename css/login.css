@@ -38,20 +38,6 @@
   transform: rotateY(180deg);
 }
 
-/* .login-content .cover::after{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.3;
-}
-
-.login-content .cover::after{
-  opacity: 0.3;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-} */
-
 .login-content .cover img{
   position: absolute;
   height: 100%;
@@ -120,7 +106,7 @@
   position: relative;
   font-size: 24px;
   font-weight: 500;
-  color: #333;
+  color: #666;
 }
 
 /* 忘記密碼 */
